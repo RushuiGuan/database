@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database", "Albatross.Database\Albatross.Database.csproj", "{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.SqlServer", "Albatross.Database.SqlServer\Albatross.Database.SqlServer.csproj", "{BF656730-5E4A-4597-8AEF-D7E2658BA278}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.DataLayer.Core", "..\..\DataLayer\src\Albatross.DataLayer.Core\Albatross.DataLayer.Core.csproj", "{7B1FA610-6930-4CDF-8A08-FE3D8E602023}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.Database.UnitTest", "Albatross.Database.UnitTest\Albatross.Database.UnitTest.csproj", "{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Debug|x64.Build.0 = Debug|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Release|x64.ActiveCfg = Release|Any CPU
+		{4E457AFF-481A-4AAD-B6CF-FBDE729131B5}.Release|x64.Build.0 = Release|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Debug|x64.Build.0 = Debug|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Release|x64.ActiveCfg = Release|Any CPU
+		{BF656730-5E4A-4597-8AEF-D7E2658BA278}.Release|x64.Build.0 = Release|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Debug|x64.Build.0 = Debug|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Release|x64.ActiveCfg = Release|Any CPU
+		{7B1FA610-6930-4CDF-8A08-FE3D8E602023}.Release|x64.Build.0 = Release|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Debug|x64.Build.0 = Debug|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|x64.ActiveCfg = Release|Any CPU
+		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGToold = {DC66FBE3-16F6-4FE3-BA4F-D3C380D2AB75}
+		SolutionGuid = {8E6AD19A-703E-4DCE-92B7-50652D34EE15}
+	EndGlobalSection
+EndGlobal

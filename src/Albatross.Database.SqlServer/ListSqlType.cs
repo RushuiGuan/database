@@ -13,8 +13,8 @@ namespace Albatross.Database.SqlServer
 		}
 
 
-		public IEnumerable<SqlType> List(Server server) {
-			using (var db = getDbConnection.Get(server)) {
+		public IEnumerable<SqlType> List(Database database) {
+			using (var db = getDbConnection.Get(database)) {
 				return db.Query<SqlType>(GetCommand());
 			}
 		}
@@ -22,14 +22,16 @@ namespace Albatross.Database.SqlServer
 		CommandDefinition GetCommand() {
 			return new CommandDefinition(@"
 select 
-	Name, 
-	max_length as MaxLength, 
-	Precision,
-	Scale,
-	is_nullable as IsNullable,
-	is_user_defined as IsUserDefined,
-	is_table_type as IsTableType
-from sys.types");
+	schemas.name as [Schema],
+	types.Name, 
+	types.max_length as MaxLength, 
+	types.Precision,
+	types.Scale,
+	types.is_nullable as IsNullable,
+	types.is_user_defined as IsUserDefined,
+	types.is_table_type as IsTableType
+from sys.types join sys.schemas on types.schema_id = schemas.schema_id
+");
 		}
 	}
 }

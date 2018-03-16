@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Albatross.Database {
 	public class SqlType {
+		public string Schema { get; set; }
 		public string Name { get; set; }
 		public int MaxLength { get; set; }
 		public int Precision { get; set; }

@@ -5,6 +5,6 @@ using System.Text;
 namespace Albatross.Database
 {
     public interface IListSqlType {
-		IEnumerable<SqlType> List(Server server);
+		IEnumerable<SqlType> List(Database database);
     }
 }

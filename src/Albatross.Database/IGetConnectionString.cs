@@ -6,6 +6,6 @@ namespace Albatross.Database
 {
     public interface IGetConnectionString
     {
-		string Get(Server server);
+		string Get(Database database);
     }
 }

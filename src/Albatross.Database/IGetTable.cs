@@ -6,6 +6,6 @@ namespace Albatross.Database
 {
     public interface IGetTable
     {
-		Table Get(Server server, string schema, string name);
+		Table Get(Database database, string schema, string name);
     }
 }

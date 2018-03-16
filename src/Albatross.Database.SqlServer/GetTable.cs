@@ -9,8 +9,8 @@ namespace Albatross.CodeGen.SqlServer {
 			this.getDbConnection = getDbConnection;
 		}
 
-		public Table Get(Server server, string schema, string name) {
-			using (var db = getDbConnection.Get(server)) {
+		public Table Get(Database.Database database, string schema, string name) {
+			using (var db = getDbConnection.Get(database)) {
 				return db.QueryFirst<Table>(Get(schema, name));
 			}
 		}

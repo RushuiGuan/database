@@ -4,9 +4,10 @@ using System.Text;
 
 namespace Albatross.Database
 {
-    public class Schema
+    public class IndexColumn
     {
-		public Database Database { get; set; }
 		public string Name { get; set; }
+		public int KeyOrdinal { get; set; }
+		public bool IsDescending { get; set; }
 	}
 }

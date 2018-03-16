@@ -6,7 +6,7 @@ namespace Albatross.Database
 {
     public class Procedure
     {
-		public Server Server { get; set; }
+		public Database Database { get; set; }
 		public string Name { get; set; }
 		public string Schema{ get; set; }
 		public IEnumerable<Variable> Parameters { get; set; }

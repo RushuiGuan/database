@@ -3,7 +3,7 @@ using Albatross.Database;
 using Dapper;
 
 namespace Albatross.CodeGen.SqlServer {
-	public class GetTablePrimaryKey : IGetTablePrimaryKey {
+	public class GetTablePrimaryKey : IListTablePrimaryKey {
 		IGetDbConnection getDbConnection;
 		IGetTable getTable;
 
@@ -12,7 +12,7 @@ namespace Albatross.CodeGen.SqlServer {
 			this.getTable = getTable;
 		}
 
-		public IEnumerable<Column> Get(Server server, string schema, string name) {
+		public IEnumerable<Column> Get(Database.Database server, string schema, string name) {
 			Table table = getTable.Get(server, schema, name);
 			using (var db = getDbConnection.Get(server)) {
 				//return db.Query<Column>(query, new { object_id = table.Object_Id});
@@ -20,7 +20,7 @@ namespace Albatross.CodeGen.SqlServer {
 			}
 		}
 
-		public IEnumerable<Column> Get(Table table) {
+		public IEnumerable<Column> List(Table table) {
 			throw new System.NotImplementedException();
 		}
 

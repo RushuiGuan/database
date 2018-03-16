@@ -6,6 +6,6 @@ namespace Albatross.Database
 {
     public interface IGetSqlType
     {
-		SqlType Get(Server server, string name);
+		SqlType Get(Database database, string schema, string name);
     }
 }

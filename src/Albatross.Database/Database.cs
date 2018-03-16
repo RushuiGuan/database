@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace Albatross.Database {
-	public class Server {
+	public class Database {
 		public string DataSource { get; set; }
 		public string InitialCatalog { get; set; }
 		public bool SSPI { get; set; }

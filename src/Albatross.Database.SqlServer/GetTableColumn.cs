@@ -3,25 +3,42 @@ using Albatross.Database;
 using Dapper;
 
 namespace Albatross.CodeGen.SqlServer {
-	public class GetTableColumn : IGetTableColumn {
+	public class GetTableColumn : IListTableColumn {
 		IGetDbConnection getDbConnection;
-		IGetTable getTable;
+		IGetTableColumnType getTableColumnType;
 
-		public GetTableColumn(IGetDbConnection getDbConnection, IGetTable getTable) {
+		public GetTableColumn(IGetDbConnection getDbConnection,IGetTableColumnType getTableColumnType) {
 			this.getDbConnection = getDbConnection;
-			this.getTable = getTable;
+			this.getTableColumnType = getTableColumnType;
 		}
 
-		public IEnumerable<Column> Get(Server server, string schema, string name) {
-			Table table = getTable.Get(server, schema, name);
-			using (var db = getDbConnection.Get(server)) {
-				//return db.Query<Column>("select * from sys.columns where object_id = @id", new { id = table.Object_Id });
-				return null;
+		public IEnumerable<Column> List(Table table) {
+			IEnumerable<Column> columns;
+			using (var db = getDbConnection.Get(table.Database)) {
+				columns = db.Query<Column>(GetColumn(table.Schema, table.Name));
 			}
+
+			foreach (var column in columns) {
+				column.Type = getTableColumnType.Get(table, column.Name);
+			}
+
+			return columns;
 		}
 
-		public IEnumerable<Column> Get(Table table) {
-			throw new System.NotImplementedException();
+		CommandDefinition GetColumn(string schema, string table) {
+			return new CommandDefinition(@"
+select  
+	c.name as Name,
+	c.is_nullable as IsNullable,
+	c.is_computed as IsComputed,
+	c.is_identity as IsIdentity,
+	c.is_filestream as IsFileStream
+from sys.columns c
+join sys.tables t on c.object_id = t.object_id
+join sys.schemas s on s.schema_id = t.schema_id
+join sys.types on types.user_type_id = c.user_type_id and types.system_type_id = c.system_type_id
+where t.name = @name and s.name = @schema
+", new { schema = schema, name = table, });
 		}
 	}
 }

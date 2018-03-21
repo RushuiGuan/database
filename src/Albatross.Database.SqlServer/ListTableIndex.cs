@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Albatross.Database.SqlServer {
-	public class GetTableIndex : IListTableIndex {
+	public class ListTableIndex : IListTableIndex {
 		IGetDbConnection getDbConnection;
 		IListTableIndexColumn listTableIndexColumn;
 
-		public GetTableIndex(IGetDbConnection getDbConnection, IListTableIndexColumn listTableIndexColumn) {
+		public ListTableIndex(IGetDbConnection getDbConnection, IListTableIndexColumn listTableIndexColumn) {
 			this.getDbConnection = getDbConnection;
 			this.listTableIndexColumn = listTableIndexColumn;
 		}
@@ -18,8 +18,8 @@ namespace Albatross.Database.SqlServer {
 			using (var db = getDbConnection.Get(table.Database)) {
 				items = db.Query<Index>(GetCommand(table.Schema, table.Name));
 			}
-
 			foreach (var item in items) {
+				item.Table = table;
 				item.Columns = listTableIndexColumn.List(item);
 			}
 			return items;

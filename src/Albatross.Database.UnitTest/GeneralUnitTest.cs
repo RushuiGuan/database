@@ -6,11 +6,19 @@ using NUnit.Framework;
 namespace Albatross.Database.UnitTest {
 	[TestFixture]
 	public class GeneralUnitTest {
-		public Database Server { get; private set; } = new Database {
+		public Database Database { get; private set; } = new Database {
 			DataSource = ".",
 			InitialCatalog = "master",
 			SSPI = true,
 		};
+
+		public Database AlbatrossDb { get; private set; } = new Database {
+			DataSource = ".",
+			InitialCatalog = "albatross",
+			SSPI = true,
+		};
+
+
 
 
 		[TestOf(typeof(GetConnectionString))]
@@ -32,14 +40,14 @@ namespace Albatross.Database.UnitTest {
 		[TestCase("bigint", ExpectedResult = "bigint")]
 		public string GetSqlTypeTest(string name) {
 			GetSqlType getSqlType = new GetSqlType(new GetDbConnection(new GetConnectionString()));
-			var type = getSqlType.Get(Server, name);
+			var type = getSqlType.Get(Database, null, name);
 			return type.Name;
 		}
 
 		[Test(TestOf =typeof(ListSqlType))]
 		public void ListSqlTypeTest() {
 			ListSqlType listSqlType = new ListSqlType(new GetDbConnection(new GetConnectionString()));
-			var types = listSqlType.List(Server);
+			var types = listSqlType.List(Database);
 			Assert.Greater(types.Count(), 0);
 		}
 
@@ -47,8 +55,25 @@ namespace Albatross.Database.UnitTest {
 		[TestCase("dbo", "spt_fallback_db", ExpectedResult = "spt_fallback_db")]
 		public string GetTableTest(string schema, string name) {
 			GetTable getTable = new GetTable(new GetDbConnection(new GetConnectionString()));
-			var type = getTable.Get(Server, schema, name);
+			var type = getTable.Get(Database, schema, name);
 			return type.Name;
+		}
+
+		[TestOf(typeof(ListTableIndex))]
+		[TestCase("dbo", "trade")]
+		public void GetTableIndexTest(string schema, string name) {
+			Table table = new Table {
+				Database = AlbatrossDb,
+				Schema = schema,
+				Name = name,
+			};
+			var getDb = new GetDbConnection(new GetConnectionString());
+			ListTableIndex getTableIndex = new ListTableIndex(getDb, new ListTableIndexColumn(getDb));
+			var indexes = getTableIndex.List(table);
+			Assert.NotZero(indexes.Count());
+			foreach (var item in indexes) {
+				Assert.NotZero(item.Columns.Count());
+			}
 		}
 	}
 }

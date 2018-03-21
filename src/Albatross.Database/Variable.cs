@@ -9,6 +9,7 @@ namespace Albatross.Database
 	/// </summary>
     public class Variable {
 		public string Name { get; set; }
+		public System.Data.ParameterDirection Direction { get; set; }	
 		public SqlType Type { get; set; }
 	}
 }

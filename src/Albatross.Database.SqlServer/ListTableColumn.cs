@@ -3,11 +3,11 @@ using Albatross.Database;
 using Dapper;
 
 namespace Albatross.CodeGen.SqlServer {
-	public class GetTableColumn : IListTableColumn {
+	public class ListTableColumn : IListTableColumn {
 		IGetDbConnection getDbConnection;
 		IGetTableColumnType getTableColumnType;
 
-		public GetTableColumn(IGetDbConnection getDbConnection,IGetTableColumnType getTableColumnType) {
+		public ListTableColumn(IGetDbConnection getDbConnection,IGetTableColumnType getTableColumnType) {
 			this.getDbConnection = getDbConnection;
 			this.getTableColumnType = getTableColumnType;
 		}

@@ -2,11 +2,16 @@
 using Albatross.CodeGen.SqlServer;
 using Albatross.Database.SqlServer;
 using NUnit.Framework;
+using SimpleInjector;
 
 namespace Albatross.Database.UnitTest {
 	[TestFixture]
 	public class GeneralUnitTest {
-		public Database Database { get; private set; } = new Database {
+		Container Container { get; } = new Container();
+
+		GetDbConnection GetDbConnection { get; } = new GetDbConnection(new GetConnectionString());
+
+		public Database MasterDb { get; private set; } = new Database {
 			DataSource = ".",
 			InitialCatalog = "master",
 			SSPI = true,
@@ -17,8 +22,6 @@ namespace Albatross.Database.UnitTest {
 			InitialCatalog = "albatross",
 			SSPI = true,
 		};
-
-
 
 
 		[TestOf(typeof(GetConnectionString))]
@@ -39,23 +42,24 @@ namespace Albatross.Database.UnitTest {
 		[TestCase("int", ExpectedResult = "int")]
 		[TestCase("bigint", ExpectedResult = "bigint")]
 		public string GetSqlTypeTest(string name) {
-			GetSqlType getSqlType = new GetSqlType(new GetDbConnection(new GetConnectionString()));
-			var type = getSqlType.Get(Database, null, name);
+			GetSqlType getSqlType = new GetSqlType(GetDbConnection);
+			var type = getSqlType.Get(MasterDb, null, name);
 			return type.Name;
 		}
 
 		[Test(TestOf =typeof(ListSqlType))]
 		public void ListSqlTypeTest() {
-			ListSqlType listSqlType = new ListSqlType(new GetDbConnection(new GetConnectionString()));
-			var types = listSqlType.List(Database);
+			ListSqlType listSqlType = new ListSqlType(GetDbConnection);
+			var types = listSqlType.List(MasterDb);
 			Assert.Greater(types.Count(), 0);
 		}
 
 		[TestOf(typeof(GetTable))]
-		[TestCase("dbo", "spt_fallback_db", ExpectedResult = "spt_fallback_db")]
+		//[TestCase("dbo", "spt_fallback_db", ExpectedResult = "spt_fallback_db")]
+		[TestCase("dyn", "svc", ExpectedResult = "svc")]
 		public string GetTableTest(string schema, string name) {
-			GetTable getTable = new GetTable(new GetDbConnection(new GetConnectionString()));
-			var type = getTable.Get(Database, schema, name);
+			GetTable getTable = new GetTable(GetDbConnection, new ListTableColumn(GetDbConnection, new GetTableColumnType(GetDbConnection)), new ListTableIndex(GetDbConnection, new ListTableIndexColumn(GetDbConnection)));
+			var type = getTable.Get(AlbatrossDb, schema, name);
 			return type.Name;
 		}
 
@@ -67,8 +71,7 @@ namespace Albatross.Database.UnitTest {
 				Schema = schema,
 				Name = name,
 			};
-			var getDb = new GetDbConnection(new GetConnectionString());
-			ListTableIndex getTableIndex = new ListTableIndex(getDb, new ListTableIndexColumn(getDb));
+			ListTableIndex getTableIndex = new ListTableIndex(GetDbConnection, new ListTableIndexColumn(GetDbConnection));
 			var indexes = getTableIndex.List(table);
 			Assert.NotZero(indexes.Count());
 			foreach (var item in indexes) {

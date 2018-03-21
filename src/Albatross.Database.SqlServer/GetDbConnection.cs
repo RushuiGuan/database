@@ -10,8 +10,8 @@ namespace Albatross.CodeGen.SqlServer {
 			this.getConnectionString = getConnectionString;
 		}
 
-		public IDbConnection Get(Database.Database server) {
-			string connectionString = getConnectionString.Get(server);
+		public IDbConnection Get(Database.Database database) {
+			string connectionString = getConnectionString.Get(database);
 			return new SqlConnection(connectionString);
 		}
 	}

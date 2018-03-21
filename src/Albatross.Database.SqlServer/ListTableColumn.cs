@@ -2,7 +2,7 @@
 using Albatross.Database;
 using Dapper;
 
-namespace Albatross.CodeGen.SqlServer {
+namespace Albatross.Database.SqlServer {
 	public class ListTableColumn : IListTableColumn {
 		IGetDbConnection getDbConnection;
 		IGetTableColumnType getTableColumnType;
@@ -32,7 +32,8 @@ select
 	c.is_nullable as IsNullable,
 	c.is_computed as IsComputed,
 	c.is_identity as IsIdentity,
-	c.is_filestream as IsFileStream
+	c.is_filestream as IsFileStream,
+	c.column_id as OrdinalPosition
 from sys.columns c
 join sys.tables t on c.object_id = t.object_id
 join sys.schemas s on s.schema_id = t.schema_id

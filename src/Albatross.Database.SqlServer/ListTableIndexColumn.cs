@@ -2,7 +2,7 @@
 using Albatross.Database;
 using Dapper;
 
-namespace Albatross.CodeGen.SqlServer {
+namespace Albatross.Database.SqlServer {
 	public class ListTableIndexColumn : IListTableIndexColumn{
 		IGetDbConnection getDbConnection;
 

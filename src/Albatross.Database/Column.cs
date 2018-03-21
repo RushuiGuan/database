@@ -13,5 +13,6 @@ namespace Albatross.Database {
 		public bool IsIdentity { get; set; }
 		public bool IsComputed { get; set; }
 		public bool IsFilestream { get; set; }
+		public int OrdinalPosition { get; set; }
 	}
 }

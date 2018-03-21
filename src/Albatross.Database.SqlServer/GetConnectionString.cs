@@ -2,9 +2,9 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Albatross.CodeGen.SqlServer {
+namespace Albatross.Database.SqlServer {
 	public class GetConnectionString : IGetConnectionString {
-		public string Get(Database.Database db) {
+		public string Get(Database db) {
 
 			SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
 			if (string.IsNullOrEmpty(db.ConnectionString)) {

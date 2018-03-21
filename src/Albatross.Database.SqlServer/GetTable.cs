@@ -2,7 +2,7 @@
 using Albatross.Database;
 using Dapper;
 
-namespace Albatross.CodeGen.SqlServer {
+namespace Albatross.Database.SqlServer {
 	public class GetTable : IGetTable {
 		IGetDbConnection getDbConnection;
 		IListTableIndex listTableIndex;
@@ -14,7 +14,7 @@ namespace Albatross.CodeGen.SqlServer {
 			this.listTableColumn = listTableColumn;
 		}
 
-		public Table Get(Database.Database database, string schema, string name) {
+		public Table Get(Database database, string schema, string name) {
 			Table table;
 			using (var db = getDbConnection.Get(database)) {
 				table = db.QueryFirst<Table>(Get(schema, name));

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Data.SqlClient;
 
-namespace Albatross.CodeGen.SqlServer {
+namespace Albatross.Database.SqlServer {
 	public class GetDbConnection : IGetDbConnection {
 		IGetConnectionString getConnectionString;
 
@@ -10,7 +10,7 @@ namespace Albatross.CodeGen.SqlServer {
 			this.getConnectionString = getConnectionString;
 		}
 
-		public IDbConnection Get(Database.Database database) {
+		public IDbConnection Get(Database database) {
 			string connectionString = getConnectionString.Get(database);
 			return new SqlConnection(connectionString);
 		}

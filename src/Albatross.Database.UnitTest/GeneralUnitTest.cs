@@ -1,5 +1,4 @@
 ﻿using System.Linq;
-using Albatross.CodeGen.SqlServer;
 using Albatross.Database.SqlServer;
 using NUnit.Framework;
 using SimpleInjector;

@@ -1,0 +1,560 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Workspace/github/database/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Column.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Column.html",
+          "hash": "lZKOJXiZHt2fQSYkAlcifA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Database.html",
+          "hash": "fdwzy9UaxLgM6pkDiq53AA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetConnectionString.html",
+          "hash": "5AagkyCvlsdYowmki6e6Zw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetDbConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetDbConnection.html",
+          "hash": "ogWIYvlXtjOrZemUPsiyQQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetProcedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetProcedure.html",
+          "hash": "AAei/Z+oYHY2/u6RMynnAg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetSqlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetSqlType.html",
+          "hash": "kaQWBGhlzaVaK+b+QkEJQg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetTable.html",
+          "hash": "9qkRqQ3QwGWi+TfYkIodqQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IGetTableColumnType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IGetTableColumnType.html",
+          "hash": "zBwhtvclA8Jg6oy5Dz/RMQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IListProcedureParameter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IListProcedureParameter.html",
+          "hash": "c6QYiBhj2Sli8Wca2lK7bg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IListSqlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IListSqlType.html",
+          "hash": "QoQRYSUPLqSrDTikBZfeDg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IListTableColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IListTableColumn.html",
+          "hash": "UmVf4RvM3fv33UwVVtBWoQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IListTableIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IListTableIndex.html",
+          "hash": "Va/BH422RhiGDC3mlcyKmg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IListTableIndexColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IListTableIndexColumn.html",
+          "hash": "2jakslPDf5Rs4TX3kekMcw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Index.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Index.html",
+          "hash": "uj1qVIC/3bUExhb+1Q6zaA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.IndexColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.IndexColumn.html",
+          "hash": "9B4zWKEz5H9mhONXWDugrQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.html",
+          "hash": "DLZE6+gfAmoIB6xvc1O45w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Ioc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Ioc.html",
+          "hash": "tfvojLpkonWkFaPbJLqHYw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Procedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Procedure.html",
+          "hash": "nOP+NW57J0c8iGjvhpXciQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Schema.html",
+          "hash": "iHRV2ELAiU3aB4HleqoPYg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetConnectionString.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetConnectionString.html",
+          "hash": "ZyuSHpUVItBTeLQWMz2gNQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetDbConnection.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetDbConnection.html",
+          "hash": "tSYUZ5teK2xsKElBC/nsPQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetProcedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetProcedure.html",
+          "hash": "87a2bjvtvQw4jRT2ku8dwA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetSqlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetSqlType.html",
+          "hash": "6td4463NNosf0M48vu2ufw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetTable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetTable.html",
+          "hash": "aRghAmQTfSjm/vqhA6vZzQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.GetTableColumnType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.GetTableColumnType.html",
+          "hash": "is8TCd7Cj5DfDMoqASOw8g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.ListSqlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.ListSqlType.html",
+          "hash": "2F7CsO7nhxZjRGSqYRcS2g=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.ListTableColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.ListTableColumn.html",
+          "hash": "Fsrqlh2O/xrA04rQiTvehQ=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.ListTableIndex.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.ListTableIndex.html",
+          "hash": "MPsVCpjIwPlFBrmy4RoBPg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.ListTableIndexColumn.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.ListTableIndexColumn.html",
+          "hash": "sQtUhCxX2OPN/Jvp2sNy4w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlServer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlServer.html",
+          "hash": "HxK4dfYwFZ8JrefIFfEwBQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.SqlType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.SqlType.html",
+          "hash": "og5OZZSNoz4ctyA/maXvvA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Table.html",
+          "hash": "OSrZkHRWVtPEYz0uYDj0Ag=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.UnitTest.GeneralUnitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.UnitTest.GeneralUnitTest.html",
+          "hash": "EUuXFWH6wYJM3sk0+KtGog=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.UnitTest.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.UnitTest.html",
+          "hash": "iS2XGAHWSMiPWpQvD1ufSw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.Variable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.Variable.html",
+          "hash": "cwwY1SSNxJvFmY3OoGdw3A=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.View.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.View.html",
+          "hash": "OFiKQ6Lu94CbJffiDeuZHw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Albatross.Database.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Albatross.Database.html",
+          "hash": "XGwPGBgYvGIa+dwf/oK3lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "96zjIQppIz3vwcLJ46BI+w=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "UXrRNsrhm5vV+ImRmfPZ7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "fWTMXh1VZ/lfka7SNAkpHg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "qu0tvWKYi7706WLM4nCHpg=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ob7LqWp4kTNLz+9W4omdTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -4,8 +4,7 @@ using System.Text;
 
 namespace Albatross.Database
 {
-    public interface IListProcedureParameter
-    {
-		IEnumerable<Parameter> List(Procedure procedure);
+    public interface IGetView {
+		View Get(Database database, string schema, string name);
     }
 }

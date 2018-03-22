@@ -7,8 +7,12 @@ namespace Albatross.Database
 	/// <summary>
 	/// A sql varialbe
 	/// </summary>
-    public class Variable {
+    public class Parameter {
 		public string Name { get; set; }
+		public string Mode{ get; set; }	
+		public bool IsResult { get; set; }
+		public int OrdinalPosition { get; set; }
+
 		public SqlType Type { get; set; }
 	}
 }

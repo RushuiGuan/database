@@ -10,7 +10,9 @@ namespace Albatross.Database
 
 		public string Name { get; set; }
 		public string Schema{ get; set; }
+		public DateTime Created { get; set; }
+		public DateTime Modified { get; set; }
 
-		public IEnumerable<Variable> Parameters { get; set; }
+		public IEnumerable<Parameter> Parameters { get; set; }
 	}
 }

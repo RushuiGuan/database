@@ -30,10 +30,13 @@ namespace Albatross.Database.SqlServer {
 		CommandDefinition Get(string schema, string name) {
 			return new CommandDefinition(@"
 select  
-	TABLE_SCHEMA as [Schema], 
-	TABLE_NAME as [Name] 
-from INFORMATION_SCHEMA.TABLES 
-where TABLE_NAME = @name", new { schema = schema, name = name});
+	tables.name as Name, 
+	schemas.name as [Schema],
+	tables.create_date as Created,
+	tables.modify_date as Modified
+from sys.tables
+join sys.schemas on tables.schema_id = schemas.schema_id
+where tables.name = @table and schemas.name = @schema", new { schema = schema, table = name});
 		}
 	}
 }

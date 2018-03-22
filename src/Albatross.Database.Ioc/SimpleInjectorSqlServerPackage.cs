@@ -11,8 +11,9 @@ namespace Albatross.Database.Ioc {
 			container.Register<IGetProcedure, GetProcedure>(Lifestyle.Singleton);
 			container.Register<IGetSqlType, GetSqlType>(Lifestyle.Singleton);
 			container.Register<IGetTable, GetTable>(Lifestyle.Singleton);
+			container.Register<IGetView, GetView>(Lifestyle.Singleton);
 			container.Register<IGetTableColumnType, GetTableColumnType>(Lifestyle.Singleton);
-			//container.Register<IListProcedureParameter, ListProcedureParameter>(Lifestyle.Singleton);
+			container.Register<IListProcedureParameter, ListProcedureParameter>(Lifestyle.Singleton);
 
 			container.Register<IListSqlType, ListSqlType>(Lifestyle.Singleton);
 			container.Register<IListTableColumn, ListTableColumn>(Lifestyle.Singleton);

@@ -5452,30 +5452,30 @@ references:
   commentId: Overload:Albatross.Database.IndexColumn.Name
   fullName: Albatross.Database.IndexColumn.Name
   nameWithType: IndexColumn.Name
-- uid: Albatross.Database.Ioc
-  name: Albatross.Database.Ioc
-  href: api/Albatross.Database.Ioc.html
-  commentId: N:Albatross.Database.Ioc
-  fullName: Albatross.Database.Ioc
-  nameWithType: Albatross.Database.Ioc
-- uid: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage
-  name: SimpleInjectorSqlServerPackage
-  href: api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.html
-  commentId: T:Albatross.Database.Ioc.SimpleInjectorSqlServerPackage
-  fullName: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage
-  nameWithType: SimpleInjectorSqlServerPackage
-- uid: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices(SimpleInjector.Container)
+- uid: Albatross.Database.Ioc.SimpleInjector
+  name: Albatross.Database.Ioc.SimpleInjector
+  href: api/Albatross.Database.Ioc.SimpleInjector.html
+  commentId: N:Albatross.Database.Ioc.SimpleInjector
+  fullName: Albatross.Database.Ioc.SimpleInjector
+  nameWithType: Albatross.Database.Ioc.SimpleInjector
+- uid: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage
+  name: SqlServerPackage
+  href: api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html
+  commentId: T:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage
+  fullName: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage
+  nameWithType: SqlServerPackage
+- uid: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices(SimpleInjector.Container)
   name: RegisterServices(Container)
-  href: api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.html#Albatross_Database_Ioc_SimpleInjectorSqlServerPackage_RegisterServices_SimpleInjector_Container_
-  commentId: M:Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices(SimpleInjector.Container)
-  fullName: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices(SimpleInjector.Container)
-  nameWithType: SimpleInjectorSqlServerPackage.RegisterServices(Container)
-- uid: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices*
+  href: api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html#Albatross_Database_Ioc_SimpleInjector_SqlServerPackage_RegisterServices_SimpleInjector_Container_
+  commentId: M:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices(SimpleInjector.Container)
+  fullName: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices(SimpleInjector.Container)
+  nameWithType: SqlServerPackage.RegisterServices(Container)
+- uid: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices*
   name: RegisterServices
-  href: api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.html#Albatross_Database_Ioc_SimpleInjectorSqlServerPackage_RegisterServices_
-  commentId: Overload:Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices
-  fullName: Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.RegisterServices
-  nameWithType: SimpleInjectorSqlServerPackage.RegisterServices
+  href: api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html#Albatross_Database_Ioc_SimpleInjector_SqlServerPackage_RegisterServices_
+  commentId: Overload:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices
+  fullName: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices
+  nameWithType: SqlServerPackage.RegisterServices
 - uid: Albatross.Database.Parameter
   name: Parameter
   href: api/Albatross.Database.Parameter.html

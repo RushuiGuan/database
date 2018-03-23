@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Database Repository </title>
+    <title>Albatross Database Schema Api </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Database Repository ">
+    <meta name="title" content="Albatross Database Schema Api ">
     <meta name="generator" content="docfx 2.31.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
@@ -60,15 +60,21 @@
         <div class="article row grid">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="database-repository">Database Repository</h1>
+<h1 id="albatross-database-schema-api">Albatross Database Schema Api</h1>
 
-<p>This repo contains a set of projects that can reads metadata from a database server.  It defines C# objects that map to database objects such as tables and views and it contains interfaces and implementations to retrieve those objects from the database. </p>
+<h2 id="summary">Summary</h2>
+<p>A set of C# APIs that can read database schema metadata.</p>
+<h2 id="description">Description</h2>
+<p>This repo contains a set of projects that reads metadata from a database server.  It defines C# objects that map to database objects such as table, view, stored procedure etc.  It also contains interfaces and implementations to retrieve those objects from the database.  For example, <a class="xref" href="api/Albatross.Database.IListTableColumn.html">IListTableColumn</a> will return all <a class="xref" href="api/Albatross.Database.Column.html">Column</a> defined by a database table.  <a class="xref" href="api/Albatross.Database.IListProcedureParameter.html">IListProcedureParameter</a> will return all parameters defined by a stored procedure.</p>
+<h1 id="projects">Projects</h1>
 <ul>
-<li><a class="xref" href="api/Albatross.Database.html">Albatross.Database</a></li>
-<li><a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a></li>
-<li><a class="xref" href="api/Albatross.Database.Ioc.html">Albatross.Database.Ioc</a></li>
-<li><a class="xref" href="api/Albatross.Database.UnitTest.html">Albatross.Database.UnitTest</a></li>
+<li><a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> - Class and interface definition</li>
+<li><a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> - Sql server implementation</li>
+<li><a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> - Ioc using SimpleInjector</li>
+<li><a class="xref" href="api/Albatross.Database.UnitTest.html">Albatross.Database.UnitTest</a> - Unit test using NUnit</li>
 </ul>
+<h1 id="how-to-use-the-api">How to use the Api</h1>
+<p>The interfaces of the Api are defined in project <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the project <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> contains the implementation for SQL server.  Ioc container is strongly recomended when using this Api.  If the SimpleInjector container is being used, use Nuget to reference the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> assembly.  The nuget package will pull down both <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> assembly and <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> assembly.  The <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> class can register the container correctly.  If another container is being used, nuget both <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and  <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> and use the chosen container to register the interfaces correctly.  Reference the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> class if necessary.</p>
 </article>
           </div>
           

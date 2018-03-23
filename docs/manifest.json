@@ -1517,11 +1517,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.yml",
+      "source_relative_path": "api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Albatross.Database.Ioc.SimpleInjectorSqlServerPackage.html",
-          "hash": "JyJBRfuHhYj5dzdmYMYR5g=="
+          "relative_path": "api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html",
+          "hash": "cco5jlkWnuo6Tmeuj84JuQ=="
         }
       },
       "is_incremental": true,
@@ -1529,11 +1529,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Albatross.Database.Ioc.yml",
+      "source_relative_path": "api/Albatross.Database.Ioc.SimpleInjector.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Albatross.Database.Ioc.html",
-          "hash": "QkpU64jBLhLEH4kYkBkKrw=="
+          "relative_path": "api/Albatross.Database.Ioc.SimpleInjector.html",
+          "hash": "XSrqQCAIzqZ6ogTTC8tfWQ=="
         }
       },
       "is_incremental": true,
@@ -1824,7 +1824,7 @@
           "hash": "jrT7wxX2KREthsMCE3E4tA=="
         }
       },
-      "is_incremental": false,
+      "is_incremental": true,
       "version": ""
     },
     {
@@ -1833,7 +1833,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ejIQjClYqAOml912EYhEKQ=="
+          "hash": "jv6Sx6G7nclYpPQPuWGI4w=="
         }
       },
       "is_incremental": false,
@@ -1869,7 +1869,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "1YxmKsTLSLq6JIjazRIqEQ=="
+          "hash": "g9zGTML2qiHSJTeYTPKgmw=="
         }
       },
       "is_incremental": true,
@@ -1895,17 +1895,17 @@
         "incrementalPhase": "build"
       },
       "processors": {
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build"
         },
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
-          "incrementalPhase": "build"
-        },
-        "TocDocumentProcessor": {
-          "can_incremental": false,
-          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         }
       }

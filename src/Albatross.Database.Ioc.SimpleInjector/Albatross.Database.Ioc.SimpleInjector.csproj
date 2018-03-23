@@ -3,6 +3,7 @@
 		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
 		<AssemblyVersion>1.0.0.0</AssemblyVersion>
 		<FileVersion>1.0.0.0</FileVersion>
+		<RootNamespace>Albatross.Database.Ioc.SimpleInjector</RootNamespace>
 	</PropertyGroup>
 	<ItemGroup>
 	  <PackageReference Include="SimpleInjector" Version="4.0.12" />

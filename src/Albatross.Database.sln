@@ -9,7 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.SqlServe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.UnitTest", "Albatross.Database.UnitTest\Albatross.Database.UnitTest.csproj", "{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Albatross.Database.Ioc", "Albatross.Database.Ioc\Albatross.Database.Ioc.csproj", "{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.Ioc.SimpleInjector", "Albatross.Database.Ioc.SimpleInjector\Albatross.Database.Ioc.SimpleInjector.csproj", "{8FD46E87-D555-40AC-B213-AF73071E465D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,20 +43,20 @@ Global
 		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|x64.ActiveCfg = Release|Any CPU
 		{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}.Release|x64.Build.0 = Release|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Debug|x64.Build.0 = Debug|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Release|x64.ActiveCfg = Release|Any CPU
-		{69F534B5-9CBD-40DF-9ACB-CEC42D3CE8B5}.Release|x64.Build.0 = Release|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Debug|x64.Build.0 = Debug|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Release|x64.ActiveCfg = Release|Any CPU
+		{8FD46E87-D555-40AC-B213-AF73071E465D}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGToold = {DC66FBE3-16F6-4FE3-BA4F-D3C380D2AB75}
 		SolutionGuid = {8E6AD19A-703E-4DCE-92B7-50652D34EE15}
+		SolutionGToold = {DC66FBE3-16F6-4FE3-BA4F-D3C380D2AB75}
 	EndGlobalSection
 EndGlobal

@@ -2,11 +2,11 @@
 using SimpleInjector;
 using SimpleInjector.Packaging;
 
-namespace Albatross.Database.Ioc {
+namespace Albatross.Database.Ioc.SimpleInjector {
 	/// <summary>
 	/// This class will set the <see cref="SimpleInjector.Container"/> between the interfaces in the <see cref="Albatross.Database"/> namespace and the implementations in the <see cref="Albatross.Database.SqlServer"/> namespace.
 	/// </summary>
-	public class SimpleInjectorSqlServerPackage : IPackage {
+	public class SqlServerPackage : IPackage {
 		public void RegisterServices(Container container) {
 			container.Register<IGetConnectionString, GetConnectionString>(Lifestyle.Singleton);
 			container.Register<IGetDbConnection, GetDbConnection>(Lifestyle.Singleton);

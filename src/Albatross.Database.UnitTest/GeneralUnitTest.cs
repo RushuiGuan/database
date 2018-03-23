@@ -15,7 +15,6 @@ namespace Albatross.Database.UnitTest {
 			InitialCatalog = "master",
 			SSPI = true,
 		};
-
 		public Database AlbatrossDb { get; private set; } = new Database {
 			DataSource = ".",
 			InitialCatalog = "albatross",
@@ -55,7 +54,7 @@ namespace Albatross.Database.UnitTest {
 
 		[TestOf(typeof(GetTable))]
 		//[TestCase("dbo", "spt_fallback_db", ExpectedResult = "spt_fallback_db")]
-		[TestCase("dyn", "svc", ExpectedResult = "svc")]
+		[TestCase("dyn", "svc", ExpectedResult = "Svc")]
 		public string GetTableTest(string schema, string name) {
 			GetTable getTable = new GetTable(GetDbConnection, new ListTableColumn(GetDbConnection, new GetTableColumnType(GetDbConnection)), new ListTableIndex(GetDbConnection, new ListTableIndexColumn(GetDbConnection)));
 			var type = getTable.Get(AlbatrossDb, schema, name);
@@ -76,6 +75,34 @@ namespace Albatross.Database.UnitTest {
 			foreach (var item in indexes) {
 				Assert.NotZero(item.Columns.Count());
 			}
+		}
+
+		[TestOf(typeof(ListProcedureParameter))]
+		[TestCase("dyn", "SetServiceType")]
+		[TestCase("dyn", "SetSvcReferenceArray")]
+		public void ListProcedureParameterTest(string schema, string name) {
+			Procedure procedure = new Procedure {
+				Database = AlbatrossDb,
+				Schema = schema,
+				Name = name,
+			};
+			var @params = new ListProcedureParameter(this.GetDbConnection).List(procedure);
+			Assert.NotZero(@params.Count());
+		}
+
+		[TestOf(typeof(GetProcedure))]
+		[TestCase("dyn", "SetServiceType")]
+		[TestCase("dyn", "SetSvcReferenceArray")]
+		public void GetProcedureTest(string schema, string name) {
+			Procedure procedure = new Procedure {
+				Database = AlbatrossDb,
+				Schema = schema,
+				Name = name,
+			};
+			var sp = new GetProcedure(this.GetDbConnection, new ListProcedureParameter(GetDbConnection)).Get(AlbatrossDb, schema, name);
+			Assert.AreEqual(sp.Name, name);
+			Assert.AreEqual(sp.Schema, schema);
+			Assert.NotZero(sp.Parameters.Count());
 		}
 	}
 }

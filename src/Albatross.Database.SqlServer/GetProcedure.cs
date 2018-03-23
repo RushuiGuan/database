@@ -19,6 +19,7 @@ namespace Albatross.Database.SqlServer
 			using (var db = getDbConnection.Get(database)) {
 				procedure = db.QueryFirst<Procedure>(GetCommandDefinition(schema, name));
 			}
+			procedure.Database = database;
 			procedure.Parameters = listProcedureParameter.List(procedure);
 			return procedure;
 		}

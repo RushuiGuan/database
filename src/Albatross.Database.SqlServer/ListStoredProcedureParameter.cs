@@ -14,9 +14,8 @@ namespace Albatross.Database.SqlServer
 
 		public IEnumerable<Parameter> List(Procedure procedure) {
 			using (var db = getDbConnection.Get(procedure.Database)) {
-				db.Query<Parameter, SqlType, Parameter>(@sql, (param, sqltype) => { param.Type = sqltype; return param; }, new { name = procedure.Name, schema = procedure.Schema,  }, splitOn: "Schema");
+				return db.Query<Parameter, SqlType, Parameter>(@sql, (param, sqltype) => { param.Type = sqltype; return param; }, new { name = procedure.Name, schema = procedure.Schema,  }, splitOn: "Schema");
 			}
-			return null;
 		}
 
 

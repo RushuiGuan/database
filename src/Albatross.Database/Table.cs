@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Albatross.Database
 {
+	/// <summary>
+	/// The class represents a database table
+	/// </summary>
     public class Table {
 		public Database Database { get; set; }
 		public string Name { get; set; }

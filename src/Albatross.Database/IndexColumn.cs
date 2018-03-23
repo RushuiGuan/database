@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Albatross.Database
 {
+	/// <summary>
+	/// The class represents an column of an index
+	/// </summary>
     public class IndexColumn
     {
 		public string Name { get; set; }

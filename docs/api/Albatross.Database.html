@@ -27,7 +27,7 @@
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -50,15 +50,15 @@
           </div>
         </nav>
         
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
+        <div class="subnav container-fluid navbar navbar-default">
+          <div class="hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
           </div>
         </div>
       </header>
-      <div role="main" class="container body-content hide-when-search">
+      <div role="main" class="container-fluid body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -78,52 +78,76 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Albatross.Database.Column.html">Column</a></h4>
-      <section></section>
+      <section><p>A <a class="xref" href="Albatross.Database.Table.html">Table</a> or <a class="xref" href="Albatross.Database.View.html">View</a> column</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Database.html">Database</a></h4>
-      <section></section>
+      <section><p>A particular database on a server.  The object should have enough information to generate a database connection string.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Index.html">Index</a></h4>
-      <section></section>
+      <section><p>The class represents a table index</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IndexColumn.html">IndexColumn</a></h4>
-      <section></section>
+      <section><p>The class represents an column of an index</p>
+</section>
+      <h4><a class="xref" href="Albatross.Database.Parameter.html">Parameter</a></h4>
+      <section><p>The class represents a stored procedure parameter</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Procedure.html">Procedure</a></h4>
-      <section></section>
+      <section><p>The class represents a database stored procedure</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Schema.html">Schema</a></h4>
-      <section></section>
+      <section><p>The class represents a database schema</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.SqlType.html">SqlType</a></h4>
-      <section></section>
+      <section><p>The class represents a database data type</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Table.html">Table</a></h4>
-      <section></section>
+      <section><p>The class represents a database table</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.Variable.html">Variable</a></h4>
-      <section><p>A sql varialbe</p>
+      <section><p>The class represents a sql variable</p>
 </section>
       <h4><a class="xref" href="Albatross.Database.View.html">View</a></h4>
-      <section></section>
+      <section><p>The class represents a database view</p>
+</section>
     <h3 id="interfaces">Interfaces
   </h3>
       <h4><a class="xref" href="Albatross.Database.IGetConnectionString.html">IGetConnectionString</a></h4>
       <section><p>Provide with an <a class="xref" href="Albatross.Database.Database.html">Database</a> object, the interface can produce a connection string by invoking the <a class="xref" href="Albatross.Database.IGetConnectionString.html#Albatross_Database_IGetConnectionString_Get_Albatross_Database_Database_">Get(Database)</a> function.</p>
 </section>
       <h4><a class="xref" href="Albatross.Database.IGetDbConnection.html">IGetDbConnection</a></h4>
-      <section></section>
+      <section><p>Provided with a <a class="xref" href="Albatross.Database.Database.html">Database</a> input, the interface will return a database connection object</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IGetProcedure.html">IGetProcedure</a></h4>
-      <section></section>
+      <section><p>Provide with a <a class="xref" href="Albatross.Database.Database.html">Database</a> object, the schema and name of a stored procedure, the interface will query the database and populate a <a class="xref" href="Albatross.Database.Procedure.html">Procedure</a> object</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IGetSqlType.html">IGetSqlType</a></h4>
-      <section></section>
+      <section><p>Provide with a <a class="xref" href="Albatross.Database.Database.html">Database</a> object, the schema and name of a sql type, the interface will query the database and populate a <a class="xref" href="Albatross.Database.SqlType.html">SqlType</a> object
+For system types, schema could be null or in case of microsoft sql server - &quot;sys&quot;.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IGetTable.html">IGetTable</a></h4>
-      <section></section>
+      <section><p>Provided with a <a class="xref" href="Albatross.Database.Database.html">Database</a> object, schema and name, the interface will query and return a <a class="xref" href="Albatross.Database.Table.html">Table</a> object.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IGetTableColumnType.html">IGetTableColumnType</a></h4>
-      <section></section>
+      <section><p>The interface will return the <a class="xref" href="Albatross.Database.SqlType.html">SqlType</a> for the specified <a class="xref" href="Albatross.Database.Table.html">Table</a> and <a class="xref" href="Albatross.Database.Column.html">Column</a></p>
+</section>
+      <h4><a class="xref" href="Albatross.Database.IGetView.html">IGetView</a></h4>
+      <section><p>Provided with a <a class="xref" href="Albatross.Database.Database.html">Database</a> object, schema and name, the interface will query the database and return a <a class="xref" href="Albatross.Database.View.html">View</a> object.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IListProcedureParameter.html">IListProcedureParameter</a></h4>
-      <section></section>
+      <section><p>The interface will query the database and return the list of <a class="xref" href="Albatross.Database.Parameter.html">Parameter</a> for the <a class="xref" href="Albatross.Database.Procedure.html">Procedure</a> object.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IListSqlType.html">IListSqlType</a></h4>
-      <section></section>
+      <section><p>The interface will return all the <a class="xref" href="Albatross.Database.SqlType.html">SqlType</a> in the specified <a class="xref" href="Albatross.Database.Database.html">Database</a></p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IListTableColumn.html">IListTableColumn</a></h4>
-      <section></section>
+      <section><p>The interface will return all <a class="xref" href="Albatross.Database.Column.html">Column</a> for the specified <a class="xref" href="Albatross.Database.Table.html">Table</a> object.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.IListTableIndex.html">IListTableIndex</a></h4>
-      <section><p>Return all the indexes of a table</p>
+      <section><p>The interface will return all the <a class="xref" href="Albatross.Database.Index.html">Index</a> of the specified <a class="xref" href="Albatross.Database.Table.html">Table</a></p>
 </section>
       <h4><a class="xref" href="Albatross.Database.IListTableIndexColumn.html">IListTableIndexColumn</a></h4>
-      <section><p>Return all the index columns of a table index</p>
+      <section><p>The interface will return all the <a class="xref" href="Albatross.Database.IndexColumn.html">IndexColumn</a> for the specified <a class="xref" href="Albatross.Database.Index.html">Index</a></p>
 </section>
 </article>
           </div>
@@ -145,7 +169,7 @@
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
-          <div class="container">
+          <div class="container-fluid">
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>

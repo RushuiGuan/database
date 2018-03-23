@@ -27,7 +27,7 @@
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -50,15 +50,15 @@
           </div>
         </nav>
         
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
+        <div class="subnav container-fluid navbar navbar-default">
+          <div class="hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
           </div>
         </div>
       </header>
-      <div role="main" class="container body-content hide-when-search">
+      <div role="main" class="container-fluid body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -73,7 +73,8 @@
   
   <h1 id="Albatross_Database_Table" data-uid="Albatross.Database.Table" class="text-break">Class Table
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>The class represents a database table</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -93,7 +94,7 @@
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Columns.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Columns%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L12">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L17">View Source</a>
   </span>
   <a id="Albatross_Database_Table_Columns_" data-uid="Albatross.Database.Table.Columns*"></a>
   <h4 id="Albatross_Database_Table_Columns" data-uid="Albatross.Database.Table.Columns">Columns</h4>
@@ -120,10 +121,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Created.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Created%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L14">View Source</a>
+  </span>
+  <a id="Albatross_Database_Table_Created_" data-uid="Albatross.Database.Table.Created*"></a>
+  <h4 id="Albatross_Database_Table_Created" data-uid="Albatross.Database.Table.Created">Created</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime Created { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Database.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Database%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L8">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L11">View Source</a>
   </span>
   <a id="Albatross_Database_Table_Database_" data-uid="Albatross.Database.Table.Database*"></a>
   <h4 id="Albatross_Database_Table_Database" data-uid="Albatross.Database.Table.Database">Database</h4>
@@ -153,7 +184,7 @@
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_IdentityColumn.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.IdentityColumn%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L14">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L19">View Source</a>
   </span>
   <a id="Albatross_Database_Table_IdentityColumn_" data-uid="Albatross.Database.Table.IdentityColumn*"></a>
   <h4 id="Albatross_Database_Table_IdentityColumn" data-uid="Albatross.Database.Table.IdentityColumn">IdentityColumn</h4>
@@ -180,10 +211,40 @@
   </table>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
+    <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Modified.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Modified%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L15">View Source</a>
+  </span>
+  <a id="Albatross_Database_Table_Modified_" data-uid="Albatross.Database.Table.Modified*"></a>
+  <h4 id="Albatross_Database_Table_Modified" data-uid="Albatross.Database.Table.Modified">Modified</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime Modified { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.DateTime</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Name.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L9">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L12">View Source</a>
   </span>
   <a id="Albatross_Database_Table_Name_" data-uid="Albatross.Database.Table.Name*"></a>
   <h4 id="Albatross_Database_Table_Name" data-uid="Albatross.Database.Table.Name">Name</h4>
@@ -213,7 +274,7 @@
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_PrimaryKeys.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.PrimaryKeys%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L13">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L18">View Source</a>
   </span>
   <a id="Albatross_Database_Table_PrimaryKeys_" data-uid="Albatross.Database.Table.PrimaryKeys*"></a>
   <h4 id="Albatross_Database_Table_PrimaryKeys" data-uid="Albatross.Database.Table.PrimaryKeys">PrimaryKeys</h4>
@@ -243,7 +304,7 @@
     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table_Schema.md&amp;value=---%0Auid%3A%20Albatross.Database.Table.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L10">View Source</a>
+    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L13">View Source</a>
   </span>
   <a id="Albatross_Database_Table_Schema_" data-uid="Albatross.Database.Table.Schema*"></a>
   <h4 id="Albatross_Database_Table_Schema" data-uid="Albatross.Database.Table.Schema">Schema</h4>
@@ -279,7 +340,7 @@
                     <a href="https://github.com/RushuiGuan/Database/new/master/apiSpec/new?filename=Albatross_Database_Table.md&amp;value=---%0Auid%3A%20Albatross.Database.Table%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L7" class="contribution-link">View Source</a>
+                    <a href="https://github.com/RushuiGuan/Database/blob/master/src/Albatross.Database/Table.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
@@ -294,7 +355,7 @@
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
-          <div class="container">
+          <div class="container-fluid">
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Albatross.Database {
 	/// <summary>
-	/// Return all the index columns of a table index
+	/// The interface will return all the <see cref="Albatross.Database.IndexColumn"/> for the specified <see cref="Albatross.Database.Index"/>
 	/// </summary>
 	public interface IListTableIndexColumn {
 		IEnumerable<IndexColumn> List(Index index);

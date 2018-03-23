@@ -5,7 +5,7 @@ using System.Text;
 namespace Albatross.Database
 {
 	/// <summary>
-	/// A sql varialbe
+	/// The class represents a stored procedure parameter
 	/// </summary>
     public class Parameter {
 		public string Name { get; set; }

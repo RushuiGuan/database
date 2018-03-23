@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Albatross.Database
 {
-    public class View
+	/// <summary>
+	/// The class represents a database view
+	/// </summary>
+	public class View
     {
 		public Database Database { get; set; }
 		public string Name { get; set; }

@@ -3,6 +3,9 @@ using System.Data;
 using System.Data.SqlClient;
 
 namespace Albatross.Database.SqlServer {
+	/// <summary>
+	/// The class uses <see cref="System.Data.SqlClient.SqlConnectionStringBuilder"/> to create a sql server connection string, unless the <see cref="Albatross.Database.Database.ConnectionString"/> property is specified
+	/// </summary>
 	public class GetConnectionString : IGetConnectionString {
 		public string Get(Database db) {
 

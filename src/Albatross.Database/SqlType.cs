@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Albatross.Database {
+	/// <summary>
+	/// The class represents a database data type
+	/// </summary>
 	public class SqlType {
 		public string Schema { get; set; }
 		public string Name { get; set; }

@@ -27,7 +27,7 @@
       <header>
         
         <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
-          <div class="container">
+          <div class="container-fluid">
             <div class="navbar-header">
               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                 <span class="sr-only">Toggle navigation</span>
@@ -50,15 +50,15 @@
           </div>
         </nav>
         
-        <div class="subnav navbar navbar-default">
-          <div class="container hide-when-search" id="breadcrumb">
+        <div class="subnav container-fluid navbar navbar-default">
+          <div class="hide-when-search" id="breadcrumb">
             <ul class="breadcrumb">
               <li></li>
             </ul>
           </div>
         </div>
       </header>
-      <div role="main" class="container body-content hide-when-search">
+      <div role="main" class="container-fluid body-content hide-when-search">
         
         <div class="sidenav hide-when-search">
           <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
@@ -78,9 +78,11 @@
     <h3 id="classes">Classes
   </h3>
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetConnectionString.html">GetConnectionString</a></h4>
-      <section></section>
+      <section><p>The class uses <span class="xref">System.Data.SqlClient.SqlConnectionStringBuilder</span> to create a sql server connection string, unless the <a class="xref" href="Albatross.Database.Database.html#Albatross_Database_Database_ConnectionString">ConnectionString</a> property is specified</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetDbConnection.html">GetDbConnection</a></h4>
-      <section></section>
+      <section><p>This implementation of <a class="xref" href="Albatross.Database.IGetDbConnection.html">IGetDbConnection</a> will create a <span class="xref">System.Data.SqlClient.SqlConnection</span> object when provided a <a class="xref" href="Albatross.Database.Database.html">Database</a> object.</p>
+</section>
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetProcedure.html">GetProcedure</a></h4>
       <section></section>
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetSqlType.html">GetSqlType</a></h4>
@@ -88,6 +90,10 @@
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetTable.html">GetTable</a></h4>
       <section></section>
       <h4><a class="xref" href="Albatross.Database.SqlServer.GetTableColumnType.html">GetTableColumnType</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Albatross.Database.SqlServer.GetView.html">GetView</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Albatross.Database.SqlServer.ListProcedureParameter.html">ListProcedureParameter</a></h4>
       <section></section>
       <h4><a class="xref" href="Albatross.Database.SqlServer.ListSqlType.html">ListSqlType</a></h4>
       <section></section>
@@ -117,7 +123,7 @@
       <footer>
         <div class="grad-bottom"></div>
         <div class="footer">
-          <div class="container">
+          <div class="container-fluid">
             <span class="pull-right">
               <a href="#top">Back to top</a>
             </span>

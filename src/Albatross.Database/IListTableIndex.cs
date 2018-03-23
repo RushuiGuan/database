@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Albatross.Database {
 	/// <summary>
-	/// Return all the indexes of a table
+	/// The interface will return all the <see cref="Albatross.Database.Index"/> of the specified <see cref="Albatross.Database.Table"/>
 	/// </summary>
 	public interface IListTableIndex {
 		IEnumerable<Index> List(Table table);

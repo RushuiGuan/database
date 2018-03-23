@@ -5,7 +5,7 @@ using System.Text;
 namespace Albatross.Database
 {
 	/// <summary>
-	/// A sql varialbe
+	/// The class represents a sql variable
 	/// </summary>
     public class Variable {
 		public string Name { get; set; }

@@ -4,7 +4,10 @@ using System.Text;
 
 namespace Albatross.Database
 {
-    public class Procedure
+	/// <summary>
+	/// The class represents a database stored procedure
+	/// </summary>
+	public class Procedure
     {
 		public Database Database { get; set; }
 

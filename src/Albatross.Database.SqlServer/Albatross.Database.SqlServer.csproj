@@ -1,26 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-		<AssemblyVersion>1.0.2.9</AssemblyVersion>
-		<FileVersion>1.0.2.9</FileVersion>
-		<Version>1.0.2</Version>
-		<Title>Albatross Database Schema Sql Server Api</Title>
-		<Description>This project provides the Microsoft Sql Server implementation of the interfaces defined in the Albatross.Database project</Description>
-		<Authors>Rushui Guan</Authors>
-		<Copyright>Copyright 2018</Copyright>
-		<PackageId>Albatross.Database.SqlServer</PackageId>
-		<PackageLicenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</PackageLicenseUrl>
-		<PackageProjectUrl>https://rushuiguan.github.io/Database/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/RushuiGuan/Database</RepositoryUrl>
-		<RepositoryType>Github</RepositoryType>
-		<PackageTags>database; metadata; schema</PackageTags>
-		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<PackageReleaseNotes>Initial Release</PackageReleaseNotes>
-		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<AssemblyVersion>1.0.3.0</AssemblyVersion>
+		<FileVersion>1.0.3.10</FileVersion>
 	</PropertyGroup>
 	<ItemGroup>
 	  <PackageReference Include="Dapper" Version="1.50.4" />
-	  <PackageReference Include="System.Data.SqlClient" Version="4.4.2" />
+	  <PackageReference Include="System.Data.SqlClient" Version="4.4.2" Condition="'$(TargetFramework)'=='netstandard2.0'" />
 	</ItemGroup>
 	<ItemGroup>
 	  <ProjectReference Include="..\Albatross.Database\Albatross.Database.csproj" />

@@ -74,7 +74,15 @@
 <li><a class="xref" href="api/Albatross.Database.UnitTest.html">Albatross.Database.UnitTest</a> - Unit test using NUnit</li>
 </ul>
 <h1 id="how-to-use-the-api">How to use the Api</h1>
-<p>The interfaces of the Api are defined in project <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the project <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> contains the implementation for SQL server.  Ioc container is strongly recomended when using this Api.  If the SimpleInjector container is being used, use Nuget to reference the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> assembly.  The nuget package will pull down both <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> assembly and <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> assembly.  The <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> class can register the container correctly.  If another container is being used, nuget both <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and  <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> and use the chosen container to register the interfaces correctly.  Reference the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> class if necessary.</p>
+<ul>
+<li>Reference <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a></li>
+<li>An Ioc container is recommended.<ul>
+<li>If the project is using SimpleInjector for Ioc, Reference <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> and use class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> to register the container correctly.</li>
+<li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> manually.  Reference class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage] if necessary.</li>
+<li>If no container is used, use the static Create method of the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class to retrive the interfaces in <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a>.</li>
+</ul>
+</li>
+</ul>
 </article>
           </div>
           

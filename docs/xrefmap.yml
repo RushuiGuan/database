@@ -553,6 +553,27 @@ references:
   commentId: N:Albatross.Database.Ioc.SimpleInjector
   fullName: Albatross.Database.Ioc.SimpleInjector
   nameWithType: Albatross.Database.Ioc.SimpleInjector
+- uid: Albatross.Database.Ioc.SimpleInjector.Factory
+  name: Factory
+  href: api/Albatross.Database.Ioc.SimpleInjector.Factory.html
+  commentId: T:Albatross.Database.Ioc.SimpleInjector.Factory
+  fullName: Albatross.Database.Ioc.SimpleInjector.Factory
+  nameWithType: Factory
+- uid: Albatross.Database.Ioc.SimpleInjector.Factory.Create*
+  name: Create
+  href: api/Albatross.Database.Ioc.SimpleInjector.Factory.html#Albatross_Database_Ioc_SimpleInjector_Factory_Create_
+  commentId: Overload:Albatross.Database.Ioc.SimpleInjector.Factory.Create
+  fullName: Albatross.Database.Ioc.SimpleInjector.Factory.Create
+  nameWithType: Factory.Create
+- uid: Albatross.Database.Ioc.SimpleInjector.Factory.Create``1
+  name: Create<T>()
+  href: api/Albatross.Database.Ioc.SimpleInjector.Factory.html#Albatross_Database_Ioc_SimpleInjector_Factory_Create__1
+  commentId: M:Albatross.Database.Ioc.SimpleInjector.Factory.Create``1
+  name.vb: Create(Of T)()
+  fullName: Albatross.Database.Ioc.SimpleInjector.Factory.Create<T>()
+  fullName.vb: Albatross.Database.Ioc.SimpleInjector.Factory.Create(Of T)()
+  nameWithType: Factory.Create<T>()
+  nameWithType.vb: Factory.Create(Of T)()
 - uid: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage
   name: SqlServerPackage
   href: api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html

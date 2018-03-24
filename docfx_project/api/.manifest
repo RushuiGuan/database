@@ -54,6 +54,8 @@
   "Albatross.Database.IndexColumn.KeyOrdinal": "Albatross.Database.IndexColumn.yml",
   "Albatross.Database.IndexColumn.Name": "Albatross.Database.IndexColumn.yml",
   "Albatross.Database.Ioc.SimpleInjector": "Albatross.Database.Ioc.SimpleInjector.yml",
+  "Albatross.Database.Ioc.SimpleInjector.Factory": "Albatross.Database.Ioc.SimpleInjector.Factory.yml",
+  "Albatross.Database.Ioc.SimpleInjector.Factory.Create``1": "Albatross.Database.Ioc.SimpleInjector.Factory.yml",
   "Albatross.Database.Ioc.SimpleInjector.SqlServerPackage": "Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.yml",
   "Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices(SimpleInjector.Container)": "Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.yml",
   "Albatross.Database.Parameter": "Albatross.Database.Parameter.yml",

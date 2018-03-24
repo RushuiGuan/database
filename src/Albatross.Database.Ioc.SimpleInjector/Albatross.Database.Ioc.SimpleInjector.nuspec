@@ -2,8 +2,8 @@
 <package >
   <metadata>
     <id>Albatross.Database.Ioc.SimpleInjector</id>
-    <version>1.0.1</version>
-		<title>Albatross Database Schema SimpleInjector Package</title>
+    <version>1.0.2</version>
+		<title>Albatross Database Schema Api SimpleInjector Package</title>
     <description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project with the implementations from the Albatross.Database.SqlServer project.</description>
     <authors>Rushui Guan</authors>
     <owners>Rushui Guan</owners>
@@ -11,7 +11,7 @@
     <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
     <tags>database schema metadata</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Initial Release</releaseNotes>
+    <releaseNotes>Create the Factory class to make it easier to use the Api without a container</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <dependencies>
       <dependency id="Albatross.Database" version="1.0.2" />

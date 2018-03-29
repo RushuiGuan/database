@@ -17,5 +17,17 @@ This repo contains a set of projects that reads metadata from a database server.
 * Reference [Albatross.Database](xref:Albatross.Database) and [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer)
 * An Ioc container is recommended.
 	* If the project is using SimpleInjector for Ioc, Reference [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector) and use class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage](xref:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage) to register the container correctly.
-	* If another container is used, register the interface in the [Albatross.Database](xref:Albatross.Database) manually.  Reference class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage] if necessary.
-	* If no container is used, use the static Create method of the [Factory](xref:Albatross.Database.Ioc.SimpleInjector.Factory) class to retrive the interfaces in [Albatross.Database](xref:Albatross.Database).
+	* If another container is used, register the interface in the [Albatross.Database](xref:Albatross.Database) and the implementation in [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) manually.  Use class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage] as a reference.
+	* If no container is used, use the static Create method of the [Factory](xref:Albatross.Database.Ioc.SimpleInjector.Factory) class to retrive and use the interfaces in [Albatross.Database](xref:Albatross.Database).
+* The following interfaces are defined in the [Albatross.Database](xref:Albatross.Database) assembly.
+	* [IGetProcedure](xref:Albatross.Database.IGetProcedure)
+	* [IGetSqlType](xref:Albatross.Database.IGetSqlType)
+	* [IGetTable](xref:Albatross.Database.IGetTable)
+	* [IGetSqlType](xref:Albatross.Database.IGetSqlType)
+	* [IGetTableColumnType](xref:Albatross.Database.IGetTableColumnType)
+	* [IGetView](xref:Albatross.Database.IGetView)
+	* [IListProcedureParameter](xref:Albatross.Database.IListProcedureParameter)
+	* [IListSqlType](xref:Albatross.Database.IListSqlType)
+	* [IListTableColumn](xref:Albatross.Database.IListTableColumn)
+	* [IListTableIndex](xref:Albatross.Database.IListTableIndex)
+	* [IListTableIndexColumn](xref:Albatross.Database.IListTableIndexColumn)

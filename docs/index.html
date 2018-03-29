@@ -8,7 +8,7 @@
     <title>Albatross Database Schema Api </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Albatross Database Schema Api ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.33.1.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -78,8 +78,22 @@
 <li>Reference <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a></li>
 <li>An Ioc container is recommended.<ul>
 <li>If the project is using SimpleInjector for Ioc, Reference <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> and use class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> to register the container correctly.</li>
-<li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> manually.  Reference class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage] if necessary.</li>
-<li>If no container is used, use the static Create method of the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class to retrive the interfaces in <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a>.</li>
+<li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the implementation in <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> manually.  Use class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage] as a reference.</li>
+<li>If no container is used, use the static Create method of the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class to retrive and use the interfaces in <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a>.</li>
+</ul>
+</li>
+<li>The following interfaces are defined in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> assembly.<ul>
+<li><a class="xref" href="api/Albatross.Database.IGetProcedure.html">IGetProcedure</a></li>
+<li><a class="xref" href="api/Albatross.Database.IGetSqlType.html">IGetSqlType</a></li>
+<li><a class="xref" href="api/Albatross.Database.IGetTable.html">IGetTable</a></li>
+<li><a class="xref" href="api/Albatross.Database.IGetSqlType.html">IGetSqlType</a></li>
+<li><a class="xref" href="api/Albatross.Database.IGetTableColumnType.html">IGetTableColumnType</a></li>
+<li><a class="xref" href="api/Albatross.Database.IGetView.html">IGetView</a></li>
+<li><a class="xref" href="api/Albatross.Database.IListProcedureParameter.html">IListProcedureParameter</a></li>
+<li><a class="xref" href="api/Albatross.Database.IListSqlType.html">IListSqlType</a></li>
+<li><a class="xref" href="api/Albatross.Database.IListTableColumn.html">IListTableColumn</a></li>
+<li><a class="xref" href="api/Albatross.Database.IListTableIndex.html">IListTableIndex</a></li>
+<li><a class="xref" href="api/Albatross.Database.IListTableIndexColumn.html">IListTableIndexColumn</a></li>
 </ul>
 </li>
 </ul>

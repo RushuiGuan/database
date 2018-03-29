@@ -3,19 +3,5 @@
 		<TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
 		<AssemblyVersion>1.0.2.0</AssemblyVersion>
 		<FileVersion>1.0.2.0</FileVersion>
-		<Version>1.0.2</Version>
-		<Title>Albatross Database Schema Core Api</Title>
-		<Description>This project defines objects that represent database objects such as table, view, procedures etc. It also defines interfaces to retrieve the objects from a database.</Description>
-		<Authors>Rushui Guan</Authors>
-		<Copyright>Copyright 2018</Copyright>
-		<PackageId>Albatross.Database</PackageId>
-		<PackageLicenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</PackageLicenseUrl>
-		<PackageProjectUrl>https://rushuiguan.github.io/Database/</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/RushuiGuan/Database</RepositoryUrl>
-		<RepositoryType>Github</RepositoryType>
-		<PackageTags>database; metadata; schema</PackageTags>
-		<GeneratePackageOnBuild>false</GeneratePackageOnBuild>
-		<PackageReleaseNotes>Change the title of the package</PackageReleaseNotes>
-		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
 	</PropertyGroup>
 </Project>

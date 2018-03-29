@@ -23,6 +23,7 @@ references:
   name: IsComputed
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_IsComputed_
   commentId: Overload:Albatross.Database.Column.IsComputed
+  isSpec: "True"
   fullName: Albatross.Database.Column.IsComputed
   nameWithType: Column.IsComputed
 - uid: Albatross.Database.Column.IsFilestream
@@ -35,6 +36,7 @@ references:
   name: IsFilestream
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_IsFilestream_
   commentId: Overload:Albatross.Database.Column.IsFilestream
+  isSpec: "True"
   fullName: Albatross.Database.Column.IsFilestream
   nameWithType: Column.IsFilestream
 - uid: Albatross.Database.Column.IsIdentity
@@ -47,6 +49,7 @@ references:
   name: IsIdentity
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_IsIdentity_
   commentId: Overload:Albatross.Database.Column.IsIdentity
+  isSpec: "True"
   fullName: Albatross.Database.Column.IsIdentity
   nameWithType: Column.IsIdentity
 - uid: Albatross.Database.Column.IsNullable
@@ -59,6 +62,7 @@ references:
   name: IsNullable
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_IsNullable_
   commentId: Overload:Albatross.Database.Column.IsNullable
+  isSpec: "True"
   fullName: Albatross.Database.Column.IsNullable
   nameWithType: Column.IsNullable
 - uid: Albatross.Database.Column.Name
@@ -71,6 +75,7 @@ references:
   name: Name
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_Name_
   commentId: Overload:Albatross.Database.Column.Name
+  isSpec: "True"
   fullName: Albatross.Database.Column.Name
   nameWithType: Column.Name
 - uid: Albatross.Database.Column.OrdinalPosition
@@ -83,6 +88,7 @@ references:
   name: OrdinalPosition
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_OrdinalPosition_
   commentId: Overload:Albatross.Database.Column.OrdinalPosition
+  isSpec: "True"
   fullName: Albatross.Database.Column.OrdinalPosition
   nameWithType: Column.OrdinalPosition
 - uid: Albatross.Database.Column.Type
@@ -95,6 +101,7 @@ references:
   name: Type
   href: api/Albatross.Database.Column.html#Albatross_Database_Column_Type_
   commentId: Overload:Albatross.Database.Column.Type
+  isSpec: "True"
   fullName: Albatross.Database.Column.Type
   nameWithType: Column.Type
 - uid: Albatross.Database.Database
@@ -113,6 +120,7 @@ references:
   name: ConnectionString
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_ConnectionString_
   commentId: Overload:Albatross.Database.Database.ConnectionString
+  isSpec: "True"
   fullName: Albatross.Database.Database.ConnectionString
   nameWithType: Database.ConnectionString
 - uid: Albatross.Database.Database.DataSource
@@ -125,6 +133,7 @@ references:
   name: DataSource
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_DataSource_
   commentId: Overload:Albatross.Database.Database.DataSource
+  isSpec: "True"
   fullName: Albatross.Database.Database.DataSource
   nameWithType: Database.DataSource
 - uid: Albatross.Database.Database.InitialCatalog
@@ -137,6 +146,7 @@ references:
   name: InitialCatalog
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_InitialCatalog_
   commentId: Overload:Albatross.Database.Database.InitialCatalog
+  isSpec: "True"
   fullName: Albatross.Database.Database.InitialCatalog
   nameWithType: Database.InitialCatalog
 - uid: Albatross.Database.Database.Password
@@ -149,6 +159,7 @@ references:
   name: Password
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_Password_
   commentId: Overload:Albatross.Database.Database.Password
+  isSpec: "True"
   fullName: Albatross.Database.Database.Password
   nameWithType: Database.Password
 - uid: Albatross.Database.Database.SSPI
@@ -161,6 +172,7 @@ references:
   name: SSPI
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_SSPI_
   commentId: Overload:Albatross.Database.Database.SSPI
+  isSpec: "True"
   fullName: Albatross.Database.Database.SSPI
   nameWithType: Database.SSPI
 - uid: Albatross.Database.Database.UserName
@@ -173,6 +185,7 @@ references:
   name: UserName
   href: api/Albatross.Database.Database.html#Albatross_Database_Database_UserName_
   commentId: Overload:Albatross.Database.Database.UserName
+  isSpec: "True"
   fullName: Albatross.Database.Database.UserName
   nameWithType: Database.UserName
 - uid: Albatross.Database.IGetConnectionString
@@ -191,6 +204,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetConnectionString.html#Albatross_Database_IGetConnectionString_Get_
   commentId: Overload:Albatross.Database.IGetConnectionString.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetConnectionString.Get
   nameWithType: IGetConnectionString.Get
 - uid: Albatross.Database.IGetDbConnection
@@ -209,6 +223,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetDbConnection.html#Albatross_Database_IGetDbConnection_Get_
   commentId: Overload:Albatross.Database.IGetDbConnection.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetDbConnection.Get
   nameWithType: IGetDbConnection.Get
 - uid: Albatross.Database.IGetProcedure
@@ -227,6 +242,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetProcedure.html#Albatross_Database_IGetProcedure_Get_
   commentId: Overload:Albatross.Database.IGetProcedure.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetProcedure.Get
   nameWithType: IGetProcedure.Get
 - uid: Albatross.Database.IGetSqlType
@@ -245,6 +261,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetSqlType.html#Albatross_Database_IGetSqlType_Get_
   commentId: Overload:Albatross.Database.IGetSqlType.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetSqlType.Get
   nameWithType: IGetSqlType.Get
 - uid: Albatross.Database.IGetTable
@@ -263,6 +280,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetTable.html#Albatross_Database_IGetTable_Get_
   commentId: Overload:Albatross.Database.IGetTable.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetTable.Get
   nameWithType: IGetTable.Get
 - uid: Albatross.Database.IGetTableColumnType
@@ -281,6 +299,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetTableColumnType.html#Albatross_Database_IGetTableColumnType_Get_
   commentId: Overload:Albatross.Database.IGetTableColumnType.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetTableColumnType.Get
   nameWithType: IGetTableColumnType.Get
 - uid: Albatross.Database.IGetView
@@ -299,6 +318,7 @@ references:
   name: Get
   href: api/Albatross.Database.IGetView.html#Albatross_Database_IGetView_Get_
   commentId: Overload:Albatross.Database.IGetView.Get
+  isSpec: "True"
   fullName: Albatross.Database.IGetView.Get
   nameWithType: IGetView.Get
 - uid: Albatross.Database.IListProcedureParameter
@@ -317,6 +337,7 @@ references:
   name: List
   href: api/Albatross.Database.IListProcedureParameter.html#Albatross_Database_IListProcedureParameter_List_
   commentId: Overload:Albatross.Database.IListProcedureParameter.List
+  isSpec: "True"
   fullName: Albatross.Database.IListProcedureParameter.List
   nameWithType: IListProcedureParameter.List
 - uid: Albatross.Database.IListSqlType
@@ -335,6 +356,7 @@ references:
   name: List
   href: api/Albatross.Database.IListSqlType.html#Albatross_Database_IListSqlType_List_
   commentId: Overload:Albatross.Database.IListSqlType.List
+  isSpec: "True"
   fullName: Albatross.Database.IListSqlType.List
   nameWithType: IListSqlType.List
 - uid: Albatross.Database.IListTableColumn
@@ -353,6 +375,7 @@ references:
   name: List
   href: api/Albatross.Database.IListTableColumn.html#Albatross_Database_IListTableColumn_List_
   commentId: Overload:Albatross.Database.IListTableColumn.List
+  isSpec: "True"
   fullName: Albatross.Database.IListTableColumn.List
   nameWithType: IListTableColumn.List
 - uid: Albatross.Database.IListTableIndex
@@ -371,6 +394,7 @@ references:
   name: List
   href: api/Albatross.Database.IListTableIndex.html#Albatross_Database_IListTableIndex_List_
   commentId: Overload:Albatross.Database.IListTableIndex.List
+  isSpec: "True"
   fullName: Albatross.Database.IListTableIndex.List
   nameWithType: IListTableIndex.List
 - uid: Albatross.Database.IListTableIndexColumn
@@ -389,6 +413,7 @@ references:
   name: List
   href: api/Albatross.Database.IListTableIndexColumn.html#Albatross_Database_IListTableIndexColumn_List_
   commentId: Overload:Albatross.Database.IListTableIndexColumn.List
+  isSpec: "True"
   fullName: Albatross.Database.IListTableIndexColumn.List
   nameWithType: IListTableIndexColumn.List
 - uid: Albatross.Database.Index
@@ -407,6 +432,7 @@ references:
   name: Columns
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_Columns_
   commentId: Overload:Albatross.Database.Index.Columns
+  isSpec: "True"
   fullName: Albatross.Database.Index.Columns
   nameWithType: Index.Columns
 - uid: Albatross.Database.Index.IsDisabled
@@ -419,6 +445,7 @@ references:
   name: IsDisabled
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_IsDisabled_
   commentId: Overload:Albatross.Database.Index.IsDisabled
+  isSpec: "True"
   fullName: Albatross.Database.Index.IsDisabled
   nameWithType: Index.IsDisabled
 - uid: Albatross.Database.Index.IsPrimaryKey
@@ -431,6 +458,7 @@ references:
   name: IsPrimaryKey
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_IsPrimaryKey_
   commentId: Overload:Albatross.Database.Index.IsPrimaryKey
+  isSpec: "True"
   fullName: Albatross.Database.Index.IsPrimaryKey
   nameWithType: Index.IsPrimaryKey
 - uid: Albatross.Database.Index.IsUnique
@@ -443,6 +471,7 @@ references:
   name: IsUnique
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_IsUnique_
   commentId: Overload:Albatross.Database.Index.IsUnique
+  isSpec: "True"
   fullName: Albatross.Database.Index.IsUnique
   nameWithType: Index.IsUnique
 - uid: Albatross.Database.Index.IsUniqueConstraint
@@ -455,6 +484,7 @@ references:
   name: IsUniqueConstraint
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_IsUniqueConstraint_
   commentId: Overload:Albatross.Database.Index.IsUniqueConstraint
+  isSpec: "True"
   fullName: Albatross.Database.Index.IsUniqueConstraint
   nameWithType: Index.IsUniqueConstraint
 - uid: Albatross.Database.Index.Name
@@ -467,6 +497,7 @@ references:
   name: Name
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_Name_
   commentId: Overload:Albatross.Database.Index.Name
+  isSpec: "True"
   fullName: Albatross.Database.Index.Name
   nameWithType: Index.Name
 - uid: Albatross.Database.Index.Table
@@ -479,6 +510,7 @@ references:
   name: Table
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_Table_
   commentId: Overload:Albatross.Database.Index.Table
+  isSpec: "True"
   fullName: Albatross.Database.Index.Table
   nameWithType: Index.Table
 - uid: Albatross.Database.Index.Type
@@ -491,6 +523,7 @@ references:
   name: Type
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_Type_
   commentId: Overload:Albatross.Database.Index.Type
+  isSpec: "True"
   fullName: Albatross.Database.Index.Type
   nameWithType: Index.Type
 - uid: Albatross.Database.Index.TypeDesc
@@ -503,6 +536,7 @@ references:
   name: TypeDesc
   href: api/Albatross.Database.Index.html#Albatross_Database_Index_TypeDesc_
   commentId: Overload:Albatross.Database.Index.TypeDesc
+  isSpec: "True"
   fullName: Albatross.Database.Index.TypeDesc
   nameWithType: Index.TypeDesc
 - uid: Albatross.Database.IndexColumn
@@ -521,6 +555,7 @@ references:
   name: IsDescending
   href: api/Albatross.Database.IndexColumn.html#Albatross_Database_IndexColumn_IsDescending_
   commentId: Overload:Albatross.Database.IndexColumn.IsDescending
+  isSpec: "True"
   fullName: Albatross.Database.IndexColumn.IsDescending
   nameWithType: IndexColumn.IsDescending
 - uid: Albatross.Database.IndexColumn.KeyOrdinal
@@ -533,6 +568,7 @@ references:
   name: KeyOrdinal
   href: api/Albatross.Database.IndexColumn.html#Albatross_Database_IndexColumn_KeyOrdinal_
   commentId: Overload:Albatross.Database.IndexColumn.KeyOrdinal
+  isSpec: "True"
   fullName: Albatross.Database.IndexColumn.KeyOrdinal
   nameWithType: IndexColumn.KeyOrdinal
 - uid: Albatross.Database.IndexColumn.Name
@@ -545,6 +581,7 @@ references:
   name: Name
   href: api/Albatross.Database.IndexColumn.html#Albatross_Database_IndexColumn_Name_
   commentId: Overload:Albatross.Database.IndexColumn.Name
+  isSpec: "True"
   fullName: Albatross.Database.IndexColumn.Name
   nameWithType: IndexColumn.Name
 - uid: Albatross.Database.Ioc.SimpleInjector
@@ -563,6 +600,7 @@ references:
   name: Create
   href: api/Albatross.Database.Ioc.SimpleInjector.Factory.html#Albatross_Database_Ioc_SimpleInjector_Factory_Create_
   commentId: Overload:Albatross.Database.Ioc.SimpleInjector.Factory.Create
+  isSpec: "True"
   fullName: Albatross.Database.Ioc.SimpleInjector.Factory.Create
   nameWithType: Factory.Create
 - uid: Albatross.Database.Ioc.SimpleInjector.Factory.Create``1
@@ -590,6 +628,7 @@ references:
   name: RegisterServices
   href: api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html#Albatross_Database_Ioc_SimpleInjector_SqlServerPackage_RegisterServices_
   commentId: Overload:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices
+  isSpec: "True"
   fullName: Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.RegisterServices
   nameWithType: SqlServerPackage.RegisterServices
 - uid: Albatross.Database.Parameter
@@ -608,6 +647,7 @@ references:
   name: IsResult
   href: api/Albatross.Database.Parameter.html#Albatross_Database_Parameter_IsResult_
   commentId: Overload:Albatross.Database.Parameter.IsResult
+  isSpec: "True"
   fullName: Albatross.Database.Parameter.IsResult
   nameWithType: Parameter.IsResult
 - uid: Albatross.Database.Parameter.Mode
@@ -620,6 +660,7 @@ references:
   name: Mode
   href: api/Albatross.Database.Parameter.html#Albatross_Database_Parameter_Mode_
   commentId: Overload:Albatross.Database.Parameter.Mode
+  isSpec: "True"
   fullName: Albatross.Database.Parameter.Mode
   nameWithType: Parameter.Mode
 - uid: Albatross.Database.Parameter.Name
@@ -632,6 +673,7 @@ references:
   name: Name
   href: api/Albatross.Database.Parameter.html#Albatross_Database_Parameter_Name_
   commentId: Overload:Albatross.Database.Parameter.Name
+  isSpec: "True"
   fullName: Albatross.Database.Parameter.Name
   nameWithType: Parameter.Name
 - uid: Albatross.Database.Parameter.OrdinalPosition
@@ -644,6 +686,7 @@ references:
   name: OrdinalPosition
   href: api/Albatross.Database.Parameter.html#Albatross_Database_Parameter_OrdinalPosition_
   commentId: Overload:Albatross.Database.Parameter.OrdinalPosition
+  isSpec: "True"
   fullName: Albatross.Database.Parameter.OrdinalPosition
   nameWithType: Parameter.OrdinalPosition
 - uid: Albatross.Database.Parameter.Type
@@ -656,6 +699,7 @@ references:
   name: Type
   href: api/Albatross.Database.Parameter.html#Albatross_Database_Parameter_Type_
   commentId: Overload:Albatross.Database.Parameter.Type
+  isSpec: "True"
   fullName: Albatross.Database.Parameter.Type
   nameWithType: Parameter.Type
 - uid: Albatross.Database.Procedure
@@ -674,6 +718,7 @@ references:
   name: Created
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Created_
   commentId: Overload:Albatross.Database.Procedure.Created
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Created
   nameWithType: Procedure.Created
 - uid: Albatross.Database.Procedure.Database
@@ -686,6 +731,7 @@ references:
   name: Database
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Database_
   commentId: Overload:Albatross.Database.Procedure.Database
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Database
   nameWithType: Procedure.Database
 - uid: Albatross.Database.Procedure.Modified
@@ -698,6 +744,7 @@ references:
   name: Modified
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Modified_
   commentId: Overload:Albatross.Database.Procedure.Modified
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Modified
   nameWithType: Procedure.Modified
 - uid: Albatross.Database.Procedure.Name
@@ -710,6 +757,7 @@ references:
   name: Name
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Name_
   commentId: Overload:Albatross.Database.Procedure.Name
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Name
   nameWithType: Procedure.Name
 - uid: Albatross.Database.Procedure.Parameters
@@ -722,6 +770,7 @@ references:
   name: Parameters
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Parameters_
   commentId: Overload:Albatross.Database.Procedure.Parameters
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Parameters
   nameWithType: Procedure.Parameters
 - uid: Albatross.Database.Procedure.Schema
@@ -734,6 +783,7 @@ references:
   name: Schema
   href: api/Albatross.Database.Procedure.html#Albatross_Database_Procedure_Schema_
   commentId: Overload:Albatross.Database.Procedure.Schema
+  isSpec: "True"
   fullName: Albatross.Database.Procedure.Schema
   nameWithType: Procedure.Schema
 - uid: Albatross.Database.Schema
@@ -752,6 +802,7 @@ references:
   name: Database
   href: api/Albatross.Database.Schema.html#Albatross_Database_Schema_Database_
   commentId: Overload:Albatross.Database.Schema.Database
+  isSpec: "True"
   fullName: Albatross.Database.Schema.Database
   nameWithType: Schema.Database
 - uid: Albatross.Database.Schema.Name
@@ -764,6 +815,7 @@ references:
   name: Name
   href: api/Albatross.Database.Schema.html#Albatross_Database_Schema_Name_
   commentId: Overload:Albatross.Database.Schema.Name
+  isSpec: "True"
   fullName: Albatross.Database.Schema.Name
   nameWithType: Schema.Name
 - uid: Albatross.Database.SqlServer
@@ -788,6 +840,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetConnectionString.html#Albatross_Database_SqlServer_GetConnectionString_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetConnectionString.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetConnectionString.Get
   nameWithType: GetConnectionString.Get
 - uid: Albatross.Database.SqlServer.GetDbConnection
@@ -806,6 +859,7 @@ references:
   name: GetDbConnection
   href: api/Albatross.Database.SqlServer.GetDbConnection.html#Albatross_Database_SqlServer_GetDbConnection__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetDbConnection.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetDbConnection.GetDbConnection
   nameWithType: GetDbConnection.GetDbConnection
 - uid: Albatross.Database.SqlServer.GetDbConnection.Get(Albatross.Database.Database)
@@ -818,6 +872,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetDbConnection.html#Albatross_Database_SqlServer_GetDbConnection_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetDbConnection.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetDbConnection.Get
   nameWithType: GetDbConnection.Get
 - uid: Albatross.Database.SqlServer.GetProcedure
@@ -836,6 +891,7 @@ references:
   name: GetProcedure
   href: api/Albatross.Database.SqlServer.GetProcedure.html#Albatross_Database_SqlServer_GetProcedure__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetProcedure.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetProcedure.GetProcedure
   nameWithType: GetProcedure.GetProcedure
 - uid: Albatross.Database.SqlServer.GetProcedure.Get(Albatross.Database.Database,System.String,System.String)
@@ -848,6 +904,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetProcedure.html#Albatross_Database_SqlServer_GetProcedure_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetProcedure.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetProcedure.Get
   nameWithType: GetProcedure.Get
 - uid: Albatross.Database.SqlServer.GetSqlType
@@ -866,6 +923,7 @@ references:
   name: GetSqlType
   href: api/Albatross.Database.SqlServer.GetSqlType.html#Albatross_Database_SqlServer_GetSqlType__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetSqlType.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetSqlType.GetSqlType
   nameWithType: GetSqlType.GetSqlType
 - uid: Albatross.Database.SqlServer.GetSqlType.Get(Albatross.Database.Database,System.String,System.String)
@@ -878,6 +936,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetSqlType.html#Albatross_Database_SqlServer_GetSqlType_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetSqlType.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetSqlType.Get
   nameWithType: GetSqlType.Get
 - uid: Albatross.Database.SqlServer.GetTable
@@ -896,6 +955,7 @@ references:
   name: GetTable
   href: api/Albatross.Database.SqlServer.GetTable.html#Albatross_Database_SqlServer_GetTable__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetTable.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetTable.GetTable
   nameWithType: GetTable.GetTable
 - uid: Albatross.Database.SqlServer.GetTable.Get(Albatross.Database.Database,System.String,System.String)
@@ -908,6 +968,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetTable.html#Albatross_Database_SqlServer_GetTable_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetTable.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetTable.Get
   nameWithType: GetTable.Get
 - uid: Albatross.Database.SqlServer.GetTableColumnType
@@ -926,6 +987,7 @@ references:
   name: GetTableColumnType
   href: api/Albatross.Database.SqlServer.GetTableColumnType.html#Albatross_Database_SqlServer_GetTableColumnType__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetTableColumnType.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetTableColumnType.GetTableColumnType
   nameWithType: GetTableColumnType.GetTableColumnType
 - uid: Albatross.Database.SqlServer.GetTableColumnType.Get(Albatross.Database.Table,System.String)
@@ -938,6 +1000,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetTableColumnType.html#Albatross_Database_SqlServer_GetTableColumnType_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetTableColumnType.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetTableColumnType.Get
   nameWithType: GetTableColumnType.Get
 - uid: Albatross.Database.SqlServer.GetView
@@ -956,6 +1019,7 @@ references:
   name: GetView
   href: api/Albatross.Database.SqlServer.GetView.html#Albatross_Database_SqlServer_GetView__ctor_
   commentId: Overload:Albatross.Database.SqlServer.GetView.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetView.GetView
   nameWithType: GetView.GetView
 - uid: Albatross.Database.SqlServer.GetView.Get(Albatross.Database.Database,System.String,System.String)
@@ -968,6 +1032,7 @@ references:
   name: Get
   href: api/Albatross.Database.SqlServer.GetView.html#Albatross_Database_SqlServer_GetView_Get_
   commentId: Overload:Albatross.Database.SqlServer.GetView.Get
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.GetView.Get
   nameWithType: GetView.Get
 - uid: Albatross.Database.SqlServer.ListProcedureParameter
@@ -986,6 +1051,7 @@ references:
   name: ListProcedureParameter
   href: api/Albatross.Database.SqlServer.ListProcedureParameter.html#Albatross_Database_SqlServer_ListProcedureParameter__ctor_
   commentId: Overload:Albatross.Database.SqlServer.ListProcedureParameter.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListProcedureParameter.ListProcedureParameter
   nameWithType: ListProcedureParameter.ListProcedureParameter
 - uid: Albatross.Database.SqlServer.ListProcedureParameter.List(Albatross.Database.Procedure)
@@ -998,6 +1064,7 @@ references:
   name: List
   href: api/Albatross.Database.SqlServer.ListProcedureParameter.html#Albatross_Database_SqlServer_ListProcedureParameter_List_
   commentId: Overload:Albatross.Database.SqlServer.ListProcedureParameter.List
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListProcedureParameter.List
   nameWithType: ListProcedureParameter.List
 - uid: Albatross.Database.SqlServer.ListSqlType
@@ -1016,6 +1083,7 @@ references:
   name: ListSqlType
   href: api/Albatross.Database.SqlServer.ListSqlType.html#Albatross_Database_SqlServer_ListSqlType__ctor_
   commentId: Overload:Albatross.Database.SqlServer.ListSqlType.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListSqlType.ListSqlType
   nameWithType: ListSqlType.ListSqlType
 - uid: Albatross.Database.SqlServer.ListSqlType.List(Albatross.Database.Database)
@@ -1028,6 +1096,7 @@ references:
   name: List
   href: api/Albatross.Database.SqlServer.ListSqlType.html#Albatross_Database_SqlServer_ListSqlType_List_
   commentId: Overload:Albatross.Database.SqlServer.ListSqlType.List
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListSqlType.List
   nameWithType: ListSqlType.List
 - uid: Albatross.Database.SqlServer.ListTableColumn
@@ -1046,6 +1115,7 @@ references:
   name: ListTableColumn
   href: api/Albatross.Database.SqlServer.ListTableColumn.html#Albatross_Database_SqlServer_ListTableColumn__ctor_
   commentId: Overload:Albatross.Database.SqlServer.ListTableColumn.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableColumn.ListTableColumn
   nameWithType: ListTableColumn.ListTableColumn
 - uid: Albatross.Database.SqlServer.ListTableColumn.List(Albatross.Database.Table)
@@ -1058,6 +1128,7 @@ references:
   name: List
   href: api/Albatross.Database.SqlServer.ListTableColumn.html#Albatross_Database_SqlServer_ListTableColumn_List_
   commentId: Overload:Albatross.Database.SqlServer.ListTableColumn.List
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableColumn.List
   nameWithType: ListTableColumn.List
 - uid: Albatross.Database.SqlServer.ListTableIndex
@@ -1076,6 +1147,7 @@ references:
   name: ListTableIndex
   href: api/Albatross.Database.SqlServer.ListTableIndex.html#Albatross_Database_SqlServer_ListTableIndex__ctor_
   commentId: Overload:Albatross.Database.SqlServer.ListTableIndex.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableIndex.ListTableIndex
   nameWithType: ListTableIndex.ListTableIndex
 - uid: Albatross.Database.SqlServer.ListTableIndex.List(Albatross.Database.Table)
@@ -1088,6 +1160,7 @@ references:
   name: List
   href: api/Albatross.Database.SqlServer.ListTableIndex.html#Albatross_Database_SqlServer_ListTableIndex_List_
   commentId: Overload:Albatross.Database.SqlServer.ListTableIndex.List
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableIndex.List
   nameWithType: ListTableIndex.List
 - uid: Albatross.Database.SqlServer.ListTableIndexColumn
@@ -1106,6 +1179,7 @@ references:
   name: ListTableIndexColumn
   href: api/Albatross.Database.SqlServer.ListTableIndexColumn.html#Albatross_Database_SqlServer_ListTableIndexColumn__ctor_
   commentId: Overload:Albatross.Database.SqlServer.ListTableIndexColumn.#ctor
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableIndexColumn.ListTableIndexColumn
   nameWithType: ListTableIndexColumn.ListTableIndexColumn
 - uid: Albatross.Database.SqlServer.ListTableIndexColumn.List(Albatross.Database.Index)
@@ -1118,6 +1192,7 @@ references:
   name: List
   href: api/Albatross.Database.SqlServer.ListTableIndexColumn.html#Albatross_Database_SqlServer_ListTableIndexColumn_List_
   commentId: Overload:Albatross.Database.SqlServer.ListTableIndexColumn.List
+  isSpec: "True"
   fullName: Albatross.Database.SqlServer.ListTableIndexColumn.List
   nameWithType: ListTableIndexColumn.List
 - uid: Albatross.Database.SqlType
@@ -1136,6 +1211,7 @@ references:
   name: IsNullable
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_IsNullable_
   commentId: Overload:Albatross.Database.SqlType.IsNullable
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.IsNullable
   nameWithType: SqlType.IsNullable
 - uid: Albatross.Database.SqlType.IsTableType
@@ -1148,6 +1224,7 @@ references:
   name: IsTableType
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_IsTableType_
   commentId: Overload:Albatross.Database.SqlType.IsTableType
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.IsTableType
   nameWithType: SqlType.IsTableType
 - uid: Albatross.Database.SqlType.IsUserDefined
@@ -1160,6 +1237,7 @@ references:
   name: IsUserDefined
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_IsUserDefined_
   commentId: Overload:Albatross.Database.SqlType.IsUserDefined
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.IsUserDefined
   nameWithType: SqlType.IsUserDefined
 - uid: Albatross.Database.SqlType.MaxLength
@@ -1172,6 +1250,7 @@ references:
   name: MaxLength
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_MaxLength_
   commentId: Overload:Albatross.Database.SqlType.MaxLength
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.MaxLength
   nameWithType: SqlType.MaxLength
 - uid: Albatross.Database.SqlType.Name
@@ -1184,6 +1263,7 @@ references:
   name: Name
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_Name_
   commentId: Overload:Albatross.Database.SqlType.Name
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.Name
   nameWithType: SqlType.Name
 - uid: Albatross.Database.SqlType.Precision
@@ -1196,6 +1276,7 @@ references:
   name: Precision
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_Precision_
   commentId: Overload:Albatross.Database.SqlType.Precision
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.Precision
   nameWithType: SqlType.Precision
 - uid: Albatross.Database.SqlType.Scale
@@ -1208,6 +1289,7 @@ references:
   name: Scale
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_Scale_
   commentId: Overload:Albatross.Database.SqlType.Scale
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.Scale
   nameWithType: SqlType.Scale
 - uid: Albatross.Database.SqlType.Schema
@@ -1220,6 +1302,7 @@ references:
   name: Schema
   href: api/Albatross.Database.SqlType.html#Albatross_Database_SqlType_Schema_
   commentId: Overload:Albatross.Database.SqlType.Schema
+  isSpec: "True"
   fullName: Albatross.Database.SqlType.Schema
   nameWithType: SqlType.Schema
 - uid: Albatross.Database.Table
@@ -1238,6 +1321,7 @@ references:
   name: Columns
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Columns_
   commentId: Overload:Albatross.Database.Table.Columns
+  isSpec: "True"
   fullName: Albatross.Database.Table.Columns
   nameWithType: Table.Columns
 - uid: Albatross.Database.Table.Created
@@ -1250,6 +1334,7 @@ references:
   name: Created
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Created_
   commentId: Overload:Albatross.Database.Table.Created
+  isSpec: "True"
   fullName: Albatross.Database.Table.Created
   nameWithType: Table.Created
 - uid: Albatross.Database.Table.Database
@@ -1262,6 +1347,7 @@ references:
   name: Database
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Database_
   commentId: Overload:Albatross.Database.Table.Database
+  isSpec: "True"
   fullName: Albatross.Database.Table.Database
   nameWithType: Table.Database
 - uid: Albatross.Database.Table.IdentityColumn
@@ -1274,6 +1360,7 @@ references:
   name: IdentityColumn
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_IdentityColumn_
   commentId: Overload:Albatross.Database.Table.IdentityColumn
+  isSpec: "True"
   fullName: Albatross.Database.Table.IdentityColumn
   nameWithType: Table.IdentityColumn
 - uid: Albatross.Database.Table.Modified
@@ -1286,6 +1373,7 @@ references:
   name: Modified
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Modified_
   commentId: Overload:Albatross.Database.Table.Modified
+  isSpec: "True"
   fullName: Albatross.Database.Table.Modified
   nameWithType: Table.Modified
 - uid: Albatross.Database.Table.Name
@@ -1298,6 +1386,7 @@ references:
   name: Name
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Name_
   commentId: Overload:Albatross.Database.Table.Name
+  isSpec: "True"
   fullName: Albatross.Database.Table.Name
   nameWithType: Table.Name
 - uid: Albatross.Database.Table.PrimaryKeys
@@ -1310,6 +1399,7 @@ references:
   name: PrimaryKeys
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_PrimaryKeys_
   commentId: Overload:Albatross.Database.Table.PrimaryKeys
+  isSpec: "True"
   fullName: Albatross.Database.Table.PrimaryKeys
   nameWithType: Table.PrimaryKeys
 - uid: Albatross.Database.Table.Schema
@@ -1322,6 +1412,7 @@ references:
   name: Schema
   href: api/Albatross.Database.Table.html#Albatross_Database_Table_Schema_
   commentId: Overload:Albatross.Database.Table.Schema
+  isSpec: "True"
   fullName: Albatross.Database.Table.Schema
   nameWithType: Table.Schema
 - uid: Albatross.Database.UnitTest
@@ -1346,6 +1437,7 @@ references:
   name: AlbatrossDb
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_AlbatrossDb_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.AlbatrossDb
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.AlbatrossDb
   nameWithType: GeneralUnitTest.AlbatrossDb
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.GetConnectionStringTest(System.String,System.String,System.Boolean,System.String,System.String)
@@ -1358,6 +1450,7 @@ references:
   name: GetConnectionStringTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_GetConnectionStringTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.GetConnectionStringTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.GetConnectionStringTest
   nameWithType: GeneralUnitTest.GetConnectionStringTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.GetProcedureTest(System.String,System.String)
@@ -1370,6 +1463,7 @@ references:
   name: GetProcedureTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_GetProcedureTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.GetProcedureTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.GetProcedureTest
   nameWithType: GeneralUnitTest.GetProcedureTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.GetSqlTypeTest(System.String)
@@ -1382,6 +1476,7 @@ references:
   name: GetSqlTypeTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_GetSqlTypeTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.GetSqlTypeTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.GetSqlTypeTest
   nameWithType: GeneralUnitTest.GetSqlTypeTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.GetTableIndexTest(System.String,System.String)
@@ -1394,6 +1489,7 @@ references:
   name: GetTableIndexTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_GetTableIndexTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.GetTableIndexTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.GetTableIndexTest
   nameWithType: GeneralUnitTest.GetTableIndexTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.GetTableTest(System.String,System.String)
@@ -1406,6 +1502,7 @@ references:
   name: GetTableTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_GetTableTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.GetTableTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.GetTableTest
   nameWithType: GeneralUnitTest.GetTableTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.ListProcedureParameterTest(System.String,System.String)
@@ -1418,6 +1515,7 @@ references:
   name: ListProcedureParameterTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_ListProcedureParameterTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.ListProcedureParameterTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.ListProcedureParameterTest
   nameWithType: GeneralUnitTest.ListProcedureParameterTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.ListSqlTypeTest
@@ -1430,6 +1528,7 @@ references:
   name: ListSqlTypeTest
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_ListSqlTypeTest_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.ListSqlTypeTest
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.ListSqlTypeTest
   nameWithType: GeneralUnitTest.ListSqlTypeTest
 - uid: Albatross.Database.UnitTest.GeneralUnitTest.MasterDb
@@ -1442,6 +1541,7 @@ references:
   name: MasterDb
   href: api/Albatross.Database.UnitTest.GeneralUnitTest.html#Albatross_Database_UnitTest_GeneralUnitTest_MasterDb_
   commentId: Overload:Albatross.Database.UnitTest.GeneralUnitTest.MasterDb
+  isSpec: "True"
   fullName: Albatross.Database.UnitTest.GeneralUnitTest.MasterDb
   nameWithType: GeneralUnitTest.MasterDb
 - uid: Albatross.Database.Variable
@@ -1460,6 +1560,7 @@ references:
   name: Name
   href: api/Albatross.Database.Variable.html#Albatross_Database_Variable_Name_
   commentId: Overload:Albatross.Database.Variable.Name
+  isSpec: "True"
   fullName: Albatross.Database.Variable.Name
   nameWithType: Variable.Name
 - uid: Albatross.Database.Variable.Type
@@ -1472,6 +1573,7 @@ references:
   name: Type
   href: api/Albatross.Database.Variable.html#Albatross_Database_Variable_Type_
   commentId: Overload:Albatross.Database.Variable.Type
+  isSpec: "True"
   fullName: Albatross.Database.Variable.Type
   nameWithType: Variable.Type
 - uid: Albatross.Database.View
@@ -1490,6 +1592,7 @@ references:
   name: Created
   href: api/Albatross.Database.View.html#Albatross_Database_View_Created_
   commentId: Overload:Albatross.Database.View.Created
+  isSpec: "True"
   fullName: Albatross.Database.View.Created
   nameWithType: View.Created
 - uid: Albatross.Database.View.Database
@@ -1502,6 +1605,7 @@ references:
   name: Database
   href: api/Albatross.Database.View.html#Albatross_Database_View_Database_
   commentId: Overload:Albatross.Database.View.Database
+  isSpec: "True"
   fullName: Albatross.Database.View.Database
   nameWithType: View.Database
 - uid: Albatross.Database.View.Modified
@@ -1514,6 +1618,7 @@ references:
   name: Modified
   href: api/Albatross.Database.View.html#Albatross_Database_View_Modified_
   commentId: Overload:Albatross.Database.View.Modified
+  isSpec: "True"
   fullName: Albatross.Database.View.Modified
   nameWithType: View.Modified
 - uid: Albatross.Database.View.Name
@@ -1526,6 +1631,7 @@ references:
   name: Name
   href: api/Albatross.Database.View.html#Albatross_Database_View_Name_
   commentId: Overload:Albatross.Database.View.Name
+  isSpec: "True"
   fullName: Albatross.Database.View.Name
   nameWithType: View.Name
 - uid: Albatross.Database.View.Schema
@@ -1538,5 +1644,6 @@ references:
   name: Schema
   href: api/Albatross.Database.View.html#Albatross_Database_View_Schema_
   commentId: Overload:Albatross.Database.View.Schema
+  isSpec: "True"
   fullName: Albatross.Database.View.Schema
   nameWithType: View.Schema

@@ -38,6 +38,6 @@ This repo contains a set of projects that reads metadata from a database server.
 		var handle = Albatross.Database.Ioc.SimpleInjector.Factory.Create<Albatross.Database.IGetTable>();
 		Table table = handle.Get(db, "dbo", "TableName");
 	```
-* An Ioc container is recommended.
+* If an Ioc container is used.
 	* If the project is using SimpleInjector for Ioc, Reference [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector) and use class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage](xref:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage) to register the container correctly.
 	* If another container is used, register the interface in the [Albatross.Database](xref:Albatross.Database) and the implementation in [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) manually.  Use the registration class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage](xref:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage) as code sample.  There is no need to reference assembly [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector).

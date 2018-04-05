@@ -103,6 +103,7 @@
 <li>If an Ioc container is used.<ul>
 <li>If the project is using SimpleInjector for Ioc, Reference <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> and use class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> to register the container correctly.</li>
 <li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the implementation in <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> manually.  Use the registration class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> as code sample.  There is no need to reference assembly <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a>.</li>
+<li>Once registered with a container, the interfaces can be used directly as dependencies.  No need to use the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class.</li>
 </ul>
 </li>
 </ul>

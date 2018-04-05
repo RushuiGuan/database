@@ -129,6 +129,8 @@
   "Albatross.Database.Table.PrimaryKeys": "Albatross.Database.Table.yml",
   "Albatross.Database.Table.Schema": "Albatross.Database.Table.yml",
   "Albatross.Database.UnitTest": "Albatross.Database.UnitTest.yml",
+  "Albatross.Database.UnitTest.FactoryTest": "Albatross.Database.UnitTest.FactoryTest.yml",
+  "Albatross.Database.UnitTest.FactoryTest.GetInterfaces": "Albatross.Database.UnitTest.FactoryTest.yml",
   "Albatross.Database.UnitTest.GeneralUnitTest": "Albatross.Database.UnitTest.GeneralUnitTest.yml",
   "Albatross.Database.UnitTest.GeneralUnitTest.AlbatrossDb": "Albatross.Database.UnitTest.GeneralUnitTest.yml",
   "Albatross.Database.UnitTest.GeneralUnitTest.GetConnectionStringTest(System.String,System.String,System.Boolean,System.String,System.String)": "Albatross.Database.UnitTest.GeneralUnitTest.yml",

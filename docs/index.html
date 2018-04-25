@@ -8,7 +8,7 @@
     <title>Albatross Database Schema Api </title>
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Albatross Database Schema Api ">
-    <meta name="generator" content="docfx 2.31.0.0">
+    <meta name="generator" content="docfx 2.34.0.0">
     
     <link rel="shortcut icon" href="favicon.ico">
     <link rel="stylesheet" href="styles/docfx.vendor.css">
@@ -70,13 +70,13 @@
 <ul>
 <li><a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> - Class and interface definition</li>
 <li><a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> - Sql server implementation</li>
-<li><a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> - Ioc using SimpleInjector</li>
+<li><a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.html">Albatross.Database.SqlServer.SimpleInjector</a> - Ioc using SimpleInjector</li>
 <li><a class="xref" href="api/Albatross.Database.UnitTest.html">Albatross.Database.UnitTest</a> - Unit test using NUnit</li>
 </ul>
 <h1 id="how-to-use-the-api">How to use the Api</h1>
 <ul>
-<li>Reference <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a>, <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> and <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a></li>
-<li><p>Use the static Create method of the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class to retrive and use the following interfaces.</p>
+<li>Reference <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a>, <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> and <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.html">Albatross.Database.SqlServer.SimpleInjector</a></li>
+<li><p>Use the static Create method of the <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.Factory.html">Factory</a> class to retrive and use the following interfaces.</p>
 <ul>
 <li><a class="xref" href="api/Albatross.Database.IGetProcedure.html">IGetProcedure</a></li>
 <li><a class="xref" href="api/Albatross.Database.IGetSqlType.html">IGetSqlType</a></li>
@@ -95,15 +95,15 @@
       InitialCatalog = &quot;DatabaseName&quot;,
       SSPI = true,
   };
-  var handle = Albatross.Database.Ioc.SimpleInjector.Factory.Create&lt;Albatross.Database.IGetTable&gt;();
+  var handle = Albatross.Database.SqlServer.SimpleInjector.Factory.Create&lt;Albatross.Database.IGetTable&gt;();
   Table table = handle.Get(db, &quot;dbo&quot;, &quot;TableName&quot;);
 </code></pre></li>
 </ul>
 </li>
 <li>If an Ioc container is used.<ul>
-<li>If the project is using SimpleInjector for Ioc, Reference <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a> and use class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> to register the container correctly.</li>
-<li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the implementation in <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> manually.  Use the registration class <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.SqlServerPackage.html">Albatross.Database.Ioc.SimpleInjector.SqlServerPackage</a> as code sample.  There is no need to reference assembly <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.html">Albatross.Database.Ioc.SimpleInjector</a>.</li>
-<li>Once registered with a container, the interfaces can be used directly as dependencies.  No need to use the <a class="xref" href="api/Albatross.Database.Ioc.SimpleInjector.Factory.html">Factory</a> class.</li>
+<li>If the project is using SimpleInjector for Ioc, Reference <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.html">Albatross.Database.SqlServer.SimpleInjector</a> and use class <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.Pack.html">Albatross.Database.SqlServer.SimpleInjector.Pack</a> to register the container correctly.</li>
+<li>If another container is used, register the interface in the <a class="xref" href="api/Albatross.Database.html">Albatross.Database</a> and the implementation in <a class="xref" href="api/Albatross.Database.SqlServer.html">Albatross.Database.SqlServer</a> manually.  Use the registration class <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.Pack.html">Albatross.Database.SqlServer.SimpleInjector.Pack</a> as code sample.  There is no need to reference assembly <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.html">Albatross.Database.SqlServer.SimpleInjector</a>.</li>
+<li>Once registered with a container, the interfaces can be used directly as dependencies.  No need to use the <a class="xref" href="api/Albatross.Database.SqlServer.SimpleInjector.Factory.html">Factory</a> class.</li>
 </ul>
 </li>
 </ul>
@@ -115,7 +115,7 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/RushuiGuan/Database/blob/master/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/RushuiGuan/Database/blob/develop/docfx_project/index.md/#L1" class="contribution-link">Improve this Doc</a>
                   </li>
                 </ul>
               </div>

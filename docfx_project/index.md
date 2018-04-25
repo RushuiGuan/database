@@ -10,12 +10,12 @@ This repo contains a set of projects that reads metadata from a database server.
 
 * [Albatross.Database](xref:Albatross.Database) - Class and interface definition
 * [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) - Sql server implementation
-* [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector) - Ioc using SimpleInjector
+* [Albatross.Database.SqlServer.SimpleInjector](xref:Albatross.Database.SqlServer.SimpleInjector) - Ioc using SimpleInjector
 * [Albatross.Database.UnitTest](xref:Albatross.Database.UnitTest) - Unit test using NUnit
 
 # How to use the Api
-* Reference [Albatross.Database](xref:Albatross.Database), [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) and [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector)
-* Use the static Create method of the [Factory](xref:Albatross.Database.Ioc.SimpleInjector.Factory) class to retrive and use the following interfaces.
+* Reference [Albatross.Database](xref:Albatross.Database), [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) and [Albatross.Database.SqlServer.SimpleInjector](xref:Albatross.Database.SqlServer.SimpleInjector)
+* Use the static Create method of the [Factory](xref:Albatross.Database.SqlServer.SimpleInjector.Factory) class to retrive and use the following interfaces.
 	* [IGetProcedure](xref:Albatross.Database.IGetProcedure)
 	* [IGetSqlType](xref:Albatross.Database.IGetSqlType)
 	* [IGetTable](xref:Albatross.Database.IGetTable)
@@ -35,10 +35,10 @@ This repo contains a set of projects that reads metadata from a database server.
 			InitialCatalog = "DatabaseName",
 			SSPI = true,
 		};
-		var handle = Albatross.Database.Ioc.SimpleInjector.Factory.Create<Albatross.Database.IGetTable>();
+		var handle = Albatross.Database.SqlServer.SimpleInjector.Factory.Create<Albatross.Database.IGetTable>();
 		Table table = handle.Get(db, "dbo", "TableName");
 	```
 * If an Ioc container is used.
-	* If the project is using SimpleInjector for Ioc, Reference [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector) and use class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage](xref:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage) to register the container correctly.
-	* If another container is used, register the interface in the [Albatross.Database](xref:Albatross.Database) and the implementation in [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) manually.  Use the registration class [Albatross.Database.Ioc.SimpleInjector.SqlServerPackage](xref:Albatross.Database.Ioc.SimpleInjector.SqlServerPackage) as code sample.  There is no need to reference assembly [Albatross.Database.Ioc.SimpleInjector](xref:Albatross.Database.Ioc.SimpleInjector).
-	* Once registered with a container, the interfaces can be used directly as dependencies.  No need to use the [Factory](xref:Albatross.Database.Ioc.SimpleInjector.Factory) class.
+	* If the project is using SimpleInjector for Ioc, Reference [Albatross.Database.SqlServer.SimpleInjector](xref:Albatross.Database.SqlServer.SimpleInjector) and use class [Albatross.Database.SqlServer.SimpleInjector.Pack](xref:Albatross.Database.SqlServer.SimpleInjector.Pack) to register the container correctly.
+	* If another container is used, register the interface in the [Albatross.Database](xref:Albatross.Database) and the implementation in [Albatross.Database.SqlServer](xref:Albatross.Database.SqlServer) manually.  Use the registration class [Albatross.Database.SqlServer.SimpleInjector.Pack](xref:Albatross.Database.SqlServer.SimpleInjector.Pack) as code sample.  There is no need to reference assembly [Albatross.Database.SqlServer.SimpleInjector](xref:Albatross.Database.SqlServer.SimpleInjector).
+	* Once registered with a container, the interfaces can be used directly as dependencies.  No need to use the [Factory](xref:Albatross.Database.SqlServer.SimpleInjector.Factory) class.

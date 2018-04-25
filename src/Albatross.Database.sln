@@ -9,11 +9,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.SqlServe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.UnitTest", "Albatross.Database.UnitTest\Albatross.Database.UnitTest.csproj", "{AB3D737E-602A-47C9-8D47-F4CFA5B0FCB6}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B8451F3F-CDCC-4BB7-BCE5-3832625E831E}"
-	ProjectSection(SolutionItems) = preProject
-		pack.ps1 = pack.ps1
-	EndProjectSection
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.SqlServer.SimpleInjector", "Albatross.Database.SqlServer.SimpleInjector\Albatross.Database.SqlServer.SimpleInjector.csproj", "{012EFAA4-D81D-455B-8219-63AC399EB6F1}"
 EndProject
 Global

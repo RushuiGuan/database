@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Albatross.Database.SqlServer.SimpleInjector</id>
-    <version>1.0.4.1</version>
+    <version>1.0.4.2</version>
     <title>Albatross SqlServer Database Schema Api SimpleInjector Package</title>
     <description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</description>
     <authors>Rushui Guan</authors>

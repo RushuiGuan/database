@@ -1,28 +1,27 @@
 <?xml version="1.0"?>
-<package >
-	<metadata>
-		<id>Albatross.Database.SqlServer.SimpleInjector</id>
-		<version>1.0.4</version>
-		<title>Albatross SqlServer Database Schema Api SimpleInjector Package</title>
-		<description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</description>
-		<authors>Rushui Guan</authors>
-		<owners>Rushui Guan</owners>
-		<licenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</licenseUrl>
-		<projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
-		<tags>database schema metadata sqlserver</tags>
-		<requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<releaseNotes>Create the Factory class to make it easier to use the Api without a container</releaseNotes>
-		<copyright>Copyright 2018</copyright>
-		<dependencies>
-			<dependency id="Albatross.Database" version="1.0.4" />
-			<dependency id="Albatross.Database.SqlServer" version="1.0.4" />
-			<dependency id="SimpleInjector" version="4.0.12" />
-			<dependency id="SimpleInjector.Packaging" version="4.0.12" />
-		</dependencies>
-	</metadata>
-
-	<files>
-		<file src="bin\release\net462\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\net462" />
-		<file src="bin\release\netstandard2.0\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\netstandard2.0" />
-	</files>
+<package>
+  <metadata>
+    <id>Albatross.Database.SqlServer.SimpleInjector</id>
+    <version>1.0.4.1</version>
+    <title>Albatross SqlServer Database Schema Api SimpleInjector Package</title>
+    <description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</description>
+    <authors>Rushui Guan</authors>
+    <owners>Rushui Guan</owners>
+    <licenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
+    <tags>database schema metadata sqlserver</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Create the Factory class to make it easier to use the Api without a container</releaseNotes>
+    <copyright>Copyright 2018</copyright>
+    <dependencies>
+      <dependency id="Albatross.Database" version="1.0.4" />
+      <dependency id="Albatross.Database.SqlServer" version="1.0.4" />
+      <dependency id="SimpleInjector" version="4.0.12" />
+      <dependency id="SimpleInjector.Packaging" version="4.0.12" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="bin\release\net462\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\net462" />
+    <file src="bin\release\netstandard2.0\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\netstandard2.0" />
+  </files>
 </package>

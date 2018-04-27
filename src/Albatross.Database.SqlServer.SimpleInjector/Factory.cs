@@ -3,7 +3,8 @@ using System;
 
 namespace Albatross.Database.SqlServer.SimpleInjector {
 	/// <summary>
-	/// <para>Use this factory class to locate the <see cref="Albatross.Database"/> interfaces.  This should only be used when the caller doesn't have an Ioc container.</para>
+	/// <para>Use this factory class to locate the <see cref="Albatross.Database"/> interfaces.  
+	/// This should only be used when the caller doesn't have an Ioc container.</para>
 	/// </summary>
 	public class Factory {
 		Container container = new Container();

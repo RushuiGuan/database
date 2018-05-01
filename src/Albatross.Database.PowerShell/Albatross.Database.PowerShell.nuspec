@@ -18,6 +18,5 @@
     <file src=".\bin\Release\net462\*.dll" target="tools" />
     <file src=".\bin\Release\net462\*.pdb" target="tools" />
     <file src=".\bin\Release\net462\*.exe" target="tools" />
-    <file src=".\readme.md" target="tools" />
   </files>
 </package>

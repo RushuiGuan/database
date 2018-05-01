@@ -1,21 +1,14 @@
-﻿using SimpleInjector;
-using System;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace Albatross.Database.PowerShell {
-	public class Ioc {
-		Container container = new Container();
+namespace Albatross.PowerShell {
+	public partial class Ioc {
 		private Ioc() {
 			new Albatross.Database.SqlServer.SimpleInjector.Pack().RegisterServices(container);
 			container.Verify();
-		}
-
-
-
-
-
-		static Lazy<Ioc> lazy = new Lazy<Ioc>(() => new Ioc());
-		public static T Get<T>() where T : class {
-			return lazy.Value.container.GetInstance<T>();
 		}
 	}
 }

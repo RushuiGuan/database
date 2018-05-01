@@ -1,4 +1,5 @@
-﻿using SimpleInjector;
+﻿using Albatross.PowerShell;
+using SimpleInjector;
 using System.Management.Automation;
 
 namespace Albatross.Database.PowerShell {

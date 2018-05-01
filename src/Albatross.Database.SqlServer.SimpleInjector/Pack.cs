@@ -21,6 +21,9 @@ namespace Albatross.Database.SqlServer.SimpleInjector {
 			container.Register<IListTableColumn, ListTableColumn>(Lifestyle.Singleton);
 			container.Register<IListTableIndex, ListTableIndex>(Lifestyle.Singleton);
 			container.Register<IListTableIndexColumn, ListTableIndexColumn>(Lifestyle.Singleton);
+			container.Register<IListTable, ListTable>(Lifestyle.Singleton);
+			container.Register<IListProcedure, ListProcedure>(Lifestyle.Singleton);
+			container.Register<IParseCriteria, ParseCriteria>(Lifestyle.Singleton);
 
 		}
 	}

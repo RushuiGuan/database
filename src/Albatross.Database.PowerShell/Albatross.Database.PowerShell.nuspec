@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package>
+  <metadata>
+    <id>Albatross.Database.PowerShell</id>
+    <version>1.0.0.0</version>
+    <title>Albatross Database PowerShell Module</title>
+    <description>PowerShell Module that expose the Albatross Database Api capability</description>
+    <authors>Rushui Guan</authors>
+    <owners>Rushui Guan</owners>
+    <licenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
+    <tags>database schema metadata powershell</tags>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <copyright>Copyright 2018</copyright>
+  </metadata>
+  <files>
+    <file src=".\bin\Release\net462\*.config" target="tools" />
+    <file src=".\bin\Release\net462\*.dll" target="tools" />
+    <file src=".\bin\Release\net462\*.pdb" target="tools" />
+    <file src=".\bin\Release\net462\*.exe" target="tools" />
+    <file src=".\readme.md" target="tools" />
+  </files>
+</package>

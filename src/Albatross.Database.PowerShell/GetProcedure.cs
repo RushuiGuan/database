@@ -1,5 +1,4 @@
-﻿using Albatross.Database;
-using System;
+﻿using SimpleInjector;
 using System.Management.Automation;
 
 namespace Albatross.Database.PowerShell {
@@ -24,7 +23,7 @@ namespace Albatross.Database.PowerShell {
 
 		protected override void BeginProcessing() {
 			base.BeginProcessing();
-			new AssemblyRediret();
+			new AssemblyRediret().Register<Container>();
 		}
 
 		protected override void ProcessRecord() {

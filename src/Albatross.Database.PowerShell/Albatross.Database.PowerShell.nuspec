@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Albatross.Database.PowerShell</id>
-    <version>1.0.0.0</version>
+    <version>1.0.0.1</version>
     <title>Albatross Database PowerShell Module</title>
     <description>PowerShell Module that expose the Albatross Database Api capability</description>
     <authors>Rushui Guan</authors>

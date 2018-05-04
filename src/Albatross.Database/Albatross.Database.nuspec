@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Albatross.Database</id>
-    <version>1.0.4.1</version>
+    <version>1.0.4.2</version>
     <title>Albatross Database Schema Core Api</title>
     <description>This project defines objects that represent database objects such as table, view, procedures etc. It also defines interfaces to retrieve the objects from a database.</description>
     <authors>Rushui Guan</authors>

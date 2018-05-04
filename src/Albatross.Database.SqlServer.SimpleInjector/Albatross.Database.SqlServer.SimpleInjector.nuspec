@@ -14,7 +14,7 @@
     <releaseNotes>Create the Factory class to make it easier to use the Api without a container</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <dependencies>
-      <dependency id="Albatross.Database" version="1.0.4.2" />
+      <dependency id="Albatross.Database" version="1.0.4.3" />
       <dependency id="Albatross.Database.SqlServer" version="1.0.4.1" />
       <dependency id="SimpleInjector" version="4.0.12" />
       <dependency id="SimpleInjector.Packaging" version="4.0.12" />

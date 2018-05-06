@@ -17,5 +17,8 @@ namespace Albatross.Database
 		public DateTime Modified { get; set; }
 
 		public IEnumerable<Parameter> Parameters { get; set; }
+
+		public string AlterScript { get; set; }
+		public string CreateScript { get; set; }
 	}
 }

@@ -45,7 +45,7 @@ namespace Albatross.Database.UnitTest {
 			return type.Name;
 		}
 
-		[Test(TestOf =typeof(ListSqlType))]
+		[Test(TestOf = typeof(ListSqlType))]
 		public void ListSqlTypeTest() {
 			ListSqlType listSqlType = new ListSqlType(GetDbConnection);
 			var types = listSqlType.List(MasterDb);
@@ -103,6 +103,21 @@ namespace Albatross.Database.UnitTest {
 			Assert.AreEqual(sp.Name, name);
 			Assert.AreEqual(sp.Schema, schema);
 			Assert.NotZero(sp.Parameters.Count());
+		}
+
+		[TestCase("ac", "createcompany", ExpectedResult = "")]
+		[TestOf(typeof(GetProcedureDefinition))]
+		public string GetProcedureDefinitionTest(string schema, string name) {
+			Procedure procedure = new Procedure() {
+				Schema = schema,
+				Name = name,
+				Database = new Database {
+					DataSource = ".",
+					InitialCatalog = "ac",
+					SSPI = true,
+				}
+			};
+			return new GetProcedureDefinition(GetDbConnection).Get(procedure);
 		}
 	}
 }

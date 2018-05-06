@@ -8,10 +8,12 @@ namespace Albatross.Database.SqlServer
 	public class GetProcedure : IGetProcedure {
 		IGetDbConnection getDbConnection;
 		IListProcedureParameter listProcedureParameter;
+		IGetProcedureDefinition getProcedureDefinition;
 
-		public GetProcedure(IGetDbConnection getDbConnection, IListProcedureParameter listProcedureParameter) {
+		public GetProcedure(IGetDbConnection getDbConnection, IListProcedureParameter listProcedureParameter, IGetProcedureDefinition getProcedureDefinition) {
 			this.getDbConnection = getDbConnection;
 			this.listProcedureParameter = listProcedureParameter;
+			this.getProcedureDefinition = getProcedureDefinition;
 		}
 
 		public Procedure Get(Database database, string schema, string name) {
@@ -21,6 +23,7 @@ namespace Albatross.Database.SqlServer
 			}
 			procedure.Database = database;
 			procedure.Parameters = listProcedureParameter.List(procedure);
+			procedure.CreateScript = getProcedureDefinition.Get(procedure);
 			return procedure;
 		}
 

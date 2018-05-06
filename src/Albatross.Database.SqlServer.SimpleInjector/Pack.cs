@@ -25,6 +25,10 @@ namespace Albatross.Database.SqlServer.SimpleInjector {
 			container.Register<IListProcedure, ListProcedure>(Lifestyle.Singleton);
 			container.Register<IParseCriteria, ParseCriteria>(Lifestyle.Singleton);
 
+			container.Register<ICheckProcedureCreated, CheckProcedureCreated>(Lifestyle.Singleton);
+			container.Register<IDeployProcedure, DeployProcedure>(Lifestyle.Singleton);
+			container.Register<IGetProcedureDefinition, GetProcedureDefinition>(Lifestyle.Singleton);
+
 		}
 	}
 }

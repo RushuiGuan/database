@@ -9,11 +9,13 @@ namespace Albatross.Database.SqlServer
 		IGetDbConnection getDbConnection;
 		IListProcedureParameter listProcedureParameter;
 		IGetProcedureDefinition getProcedureDefinition;
+		IGetDatabasePermission getDatabasePermission;
 
-		public GetProcedure(IGetDbConnection getDbConnection, IListProcedureParameter listProcedureParameter, IGetProcedureDefinition getProcedureDefinition) {
+		public GetProcedure(IGetDbConnection getDbConnection, IListProcedureParameter listProcedureParameter, IGetProcedureDefinition getProcedureDefinition, IGetDatabasePermission getDatabasePermission) {
 			this.getDbConnection = getDbConnection;
 			this.listProcedureParameter = listProcedureParameter;
 			this.getProcedureDefinition = getProcedureDefinition;
+			this.getDatabasePermission = getDatabasePermission;
 		}
 
 		public Procedure Get(Database database, string schema, string name) {
@@ -24,6 +26,7 @@ namespace Albatross.Database.SqlServer
 			procedure.Database = database;
 			procedure.Parameters = listProcedureParameter.List(procedure);
 			procedure.CreateScript = getProcedureDefinition.Get(procedure);
+			procedure.Permissions = getDatabasePermission.Get(procedure);
 			return procedure;
 		}
 

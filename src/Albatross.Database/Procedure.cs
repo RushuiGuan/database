@@ -7,8 +7,7 @@ namespace Albatross.Database
 	/// <summary>
 	/// The class represents a database stored procedure
 	/// </summary>
-	public class Procedure
-    {
+	public class Procedure : IDatabaseObject { 
 		public Database Database { get; set; }
 
 		public string Name { get; set; }
@@ -20,5 +19,7 @@ namespace Albatross.Database
 
 		public string AlterScript { get; set; }
 		public string CreateScript { get; set; }
+		public string PermissionScript { get; set; }
+		public IEnumerable<DatabasePermission> Permissions { get; set; }
 	}
 }

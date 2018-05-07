@@ -15,7 +15,7 @@
     <copyright>Copyright 2018</copyright>
     <dependencies>
       <dependency id="Albatross.Database" version="1.0.4.5" />
-      <dependency id="Albatross.Database.SqlServer" version="1.0.4.3" />
+      <dependency id="Albatross.Database.SqlServer" version="1.0.4.4" />
       <dependency id="SimpleInjector" version="4.0.12" />
       <dependency id="SimpleInjector.Packaging" version="4.0.12" />
     </dependencies>

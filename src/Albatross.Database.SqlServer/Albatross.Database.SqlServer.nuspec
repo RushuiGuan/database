@@ -2,7 +2,7 @@
 <package>
   <metadata>
     <id>Albatross.Database.SqlServer</id>
-    <version>1.0.4.3</version>
+    <version>1.0.4.4</version>
     <title>Albatross Database Schema Sql Server Api</title>
     <description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</description>
     <authors>Rushui Guan</authors>

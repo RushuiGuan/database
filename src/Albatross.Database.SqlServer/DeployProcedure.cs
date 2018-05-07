@@ -29,6 +29,9 @@ namespace Albatross.Database.SqlServer
 						db.Execute(procedure.CreateScript);
 					}
 				}
+				if (!string.IsNullOrEmpty(procedure.PermissionScript)) {
+					db.Execute(procedure.PermissionScript);
+				}
 			}
 		}
 	}

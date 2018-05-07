@@ -99,7 +99,7 @@ namespace Albatross.Database.UnitTest {
 				Schema = schema,
 				Name = name,
 			};
-			var sp = new GetProcedure(this.GetDbConnection, new ListProcedureParameter(GetDbConnection)).Get(AlbatrossDb, schema, name);
+			var sp = new GetProcedure(this.GetDbConnection, new ListProcedureParameter(GetDbConnection), new GetProcedureDefinition(this.GetDbConnection), new GetDatabasePermission(this.GetDbConnection)).Get(AlbatrossDb, schema, name);
 			Assert.AreEqual(sp.Name, name);
 			Assert.AreEqual(sp.Schema, schema);
 			Assert.NotZero(sp.Parameters.Count());

@@ -20,7 +20,7 @@ namespace Albatross.Database.SqlServer {
 				}
 				return sb.ToString();
 			} else {
-				return db.ConnectionString;
+				return db?.ConnectionString;
 			}
 		}
 	}

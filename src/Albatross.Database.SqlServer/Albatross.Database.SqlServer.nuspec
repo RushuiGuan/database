@@ -11,7 +11,7 @@
     <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
     <tags>database schema metadata</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Bug fix on the GetProcedure implementation</releaseNotes>
+	  <releaseNotes>Please see https://rushuiguan.github.io/Database/ </releaseNotes>
     <copyright>Copyright 2018</copyright>
     <dependencies>
       <group targetFramework="net462">

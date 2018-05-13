@@ -11,7 +11,7 @@
     <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
     <tags>database schema metadata sqlserver</tags>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Create the Factory class to make it easier to use the Api without a container</releaseNotes>
+    <releaseNotes>Please see https://rushuiguan.github.io/Database/ </releaseNotes>
     <copyright>Copyright 2018</copyright>
     <dependencies>
       <dependency id="Albatross.Database" version="1.1.4.9" />

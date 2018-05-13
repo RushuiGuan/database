@@ -8,8 +8,9 @@ namespace Albatross.Database.SqlServer {
 	/// </summary>
 	public class GetConnectionString : IGetConnectionString {
 		public string Get(Database db) {
+			if (db == null) { return null; }
 			SqlConnectionStringBuilder sb = new SqlConnectionStringBuilder();
-			if (string.IsNullOrEmpty(db?.ConnectionString)) {
+			if (string.IsNullOrEmpty(db.ConnectionString)) {
 				sb.InitialCatalog = db.InitialCatalog;
 				sb.DataSource = db.DataSource;
 				if (db.SSPI) {
@@ -20,7 +21,7 @@ namespace Albatross.Database.SqlServer {
 				}
 				return sb.ToString();
 			} else {
-				return db?.ConnectionString;
+				return db.ConnectionString;
 			}
 		}
 	}

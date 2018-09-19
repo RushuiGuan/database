@@ -1,12 +1,13 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>1.1.4.13</AssemblyVersion>
-    <FileVersion>1.1.4.13</FileVersion>
+    <AssemblyVersion>1.1.4.14</AssemblyVersion>
+    <FileVersion>1.1.4.14</FileVersion>
+    <Version>1.1.4-alpha</Version>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="SimpleInjector" Version="4.0.12" />
-    <PackageReference Include="SimpleInjector.Packaging" Version="4.0.12" />
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+    <PackageReference Include="SimpleInjector.Packaging" Version="4.3.0" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Albatross.Database.SqlServer\Albatross.Database.SqlServer.csproj" />

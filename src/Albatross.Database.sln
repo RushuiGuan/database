@@ -11,8 +11,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.UnitTest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Albatross.Database.SqlServer.SimpleInjector", "Albatross.Database.SqlServer.SimpleInjector\Albatross.Database.SqlServer.SimpleInjector.csproj", "{012EFAA4-D81D-455B-8219-63AC399EB6F1}"
 EndProject
-Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "Scripts", "Scripts\Scripts.pssproj", "{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,20 +51,12 @@ Global
 		{012EFAA4-D81D-455B-8219-63AC399EB6F1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{012EFAA4-D81D-455B-8219-63AC399EB6F1}.Release|x64.ActiveCfg = Release|Any CPU
 		{012EFAA4-D81D-455B-8219-63AC399EB6F1}.Release|x64.Build.0 = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Debug|x64.Build.0 = Debug|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x64.ActiveCfg = Release|Any CPU
-		{6CAFC0C6-A428-4D30-A9F9-700E829FEA51}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {8E6AD19A-703E-4DCE-92B7-50652D34EE15}
 		SolutionGToold = {DC66FBE3-16F6-4FE3-BA4F-D3C380D2AB75}
+		SolutionGuid = {8E6AD19A-703E-4DCE-92B7-50652D34EE15}
 	EndGlobalSection
 EndGlobal

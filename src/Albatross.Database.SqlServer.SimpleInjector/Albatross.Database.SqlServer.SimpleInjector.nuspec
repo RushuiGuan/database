@@ -2,26 +2,6 @@
 <package>
   <metadata>
     <id>Albatross.Database.SqlServer.SimpleInjector</id>
-    <version>1.1.4-alpha</version>
-    <title>Albatross SqlServer Database Schema Api SimpleInjector Package</title>
-    <description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</description>
-    <authors>Rushui Guan</authors>
-    <owners>Rushui Guan</owners>
-    <licenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
-    <tags>database schema metadata sqlserver</tags>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Please see https://rushuiguan.github.io/Database/ </releaseNotes>
-    <copyright>Copyright 2018</copyright>
-    <dependencies>
-      <dependency id="Albatross.Database" version="1.1.4.9" />
-      <dependency id="Albatross.Database.SqlServer" version="1.1.4.14" />
-      <dependency id="SimpleInjector" version="4.0.12" />
-      <dependency id="SimpleInjector.Packaging" version="4.0.12" />
-    </dependencies>
+    <version>1.1.4-alpha.0</version>
   </metadata>
-  <files>
-    <file src="bin\release\net462\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\net462" />
-    <file src="bin\release\netstandard2.0\Albatross.Database.SqlServer.SimpleInjector.*" target="lib\netstandard2.0" />
-  </files>
 </package>

@@ -1,8 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>1.1.4.10</AssemblyVersion>
-    <FileVersion>1.1.4.10</FileVersion>
-    <Version>1.1.4-alpha</Version>
+    <AssemblyVersion>1.1.4.11</AssemblyVersion>
+    <FileVersion>1.1.4.11</FileVersion>
+    <Version>1.1.4-alpha.0</Version>
+    <Authors>Rushui Guan</Authors>
+    <Product>Albatross Database Schema Core Api</Product>
+    <Description>This project defines objects that represent database objects such as table, view, procedures etc. It also defines interfaces to retrieve the objects from a database.
+</Description>
+    <PackageLicenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</PackageLicenseUrl>
+    <Copyright>https://rushuiguan.github.io/Database/</Copyright>
+    <PackageTags>database schema metadata</PackageTags>
+    <PackageReleaseNotes>Please see https://rushuiguan.github.io/Database/</PackageReleaseNotes>
   </PropertyGroup>
 </Project>

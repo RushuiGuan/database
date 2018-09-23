@@ -2,31 +2,6 @@
 <package>
   <metadata>
     <id>Albatross.Database.SqlServer</id>
-    <version>1.1.4-alpha</version>
-    <title>Albatross Database Schema Sql Server Api</title>
-    <description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</description>
-    <authors>Rushui Guan</authors>
-    <owners>Rushui Guan</owners>
-    <licenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</licenseUrl>
-    <projectUrl>https://rushuiguan.github.io/Database/</projectUrl>
-    <tags>database schema metadata</tags>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <releaseNotes>Please see https://rushuiguan.github.io/Database/ </releaseNotes>
-    <copyright>Copyright 2018</copyright>
-    <dependencies>
-      <group targetFramework="net462">
-        <dependency id="Albatross.Database" version="1.1.4.9" />
-        <dependency id="Dapper" version="1.50.4" />
-      </group>
-      <group targetFramework="netstandard2.0">
-        <dependency id="Albatross.Database" version="1.1.4.9" />
-        <dependency id="System.Data.SqlClient" version="4.4.2" />
-        <dependency id="Dapper" version="1.50.4" />
-      </group>
-    </dependencies>
+    <version>1.1.4-alpha.0</version>
   </metadata>
-  <files>
-    <file src="bin\release\net462\Albatross.Database.SqlServer.*" target="lib\net462" />
-    <file src="bin\release\netstandard2.0\Albatross.Database.SqlServer.*" target="lib\netstandard2.0" />
-  </files>
 </package>

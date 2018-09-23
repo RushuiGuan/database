@@ -1,9 +1,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>1.1.4.16</AssemblyVersion>
-    <FileVersion>1.1.4.16</FileVersion>
-    <Version>1.1.4-alpha</Version>
+    <AssemblyVersion>1.1.4.17</AssemblyVersion>
+    <FileVersion>1.1.4.17</FileVersion>
+    <Version>1.1.4-alpha.0</Version>
+    <Authors>Rushui Guan</Authors>
+    <Product>Albatross Database Schema Sql Server Api</Product>
+    <Description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</Description>
+    <PackageLicenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageTags>database schema metadata</PackageTags>
+    <PackageProjectUrl>https://rushuiguan.github.io/Database/</PackageProjectUrl>
+    <PackageReleaseNotes>Please see https://rushuiguan.github.io/Database/</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />

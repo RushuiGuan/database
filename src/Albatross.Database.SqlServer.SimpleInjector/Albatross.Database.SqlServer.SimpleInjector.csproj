@@ -13,6 +13,7 @@
     <PackageTags>database schema metadata sqlserver</PackageTags>
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
+    <Copyright>Copyright ©2018</Copyright>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SimpleInjector" Version="4.3.0" />

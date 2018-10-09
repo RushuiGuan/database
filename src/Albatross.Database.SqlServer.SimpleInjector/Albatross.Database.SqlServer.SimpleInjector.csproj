@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <Version>2.0.0-beta</Version>
+    <AssemblyVersion>1.1.5.0</AssemblyVersion>
+    <FileVersion>1.1.5.0</FileVersion>
+    <Version>1.1.5-beta</Version>
     <Authors>Rushui Guan</Authors>
     <Product>Albatross SqlServer Database Schema Api SimpleInjector Package</Product>
     <Description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</Description>

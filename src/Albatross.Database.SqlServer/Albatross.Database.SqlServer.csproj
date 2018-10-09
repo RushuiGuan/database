@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net462</TargetFrameworks>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
-    <Version>2.0.0-beta</Version>
+    <AssemblyVersion>1.1.5.0</AssemblyVersion>
+    <FileVersion>1.1.5.0</FileVersion>
+    <Version>1.1.5-beta</Version>
     <Authors>Rushui Guan</Authors>
     <Product>Albatross Database Schema Sql Server Api</Product>
     <Description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</Description>

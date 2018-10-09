@@ -6,6 +6,7 @@
     <Version>1.1.5</Version>
     <Authors>Rushui Guan</Authors>
     <Product>Albatross Database Schema Core Api</Product>
+    <Title>Albatross Database Schema Core Api</Title>
     <Description>This project defines objects that represent database objects such as table, view, procedures etc. It also defines interfaces to retrieve the objects from a database.
 </Description>
     <PackageLicenseUrl>https://github.com/RushuiGuan/database/blob/master/LICENSE</PackageLicenseUrl>

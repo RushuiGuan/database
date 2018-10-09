@@ -6,6 +6,7 @@
     <Version>1.1.5</Version>
     <Authors>Rushui Guan</Authors>
     <Product>Albatross Database Schema Sql Server Api</Product>
+    <Title>Albatross Database Schema Sql Server Api</Title>
     <Description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</Description>
     <PackageLicenseUrl>https://github.com/RushuiGuan/database/blob/master/LICENSE</PackageLicenseUrl>
     <PackageTags>database schema metadata</PackageTags>

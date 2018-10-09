@@ -12,6 +12,7 @@
     <PackageTags>database schema metadata</PackageTags>
     <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="1.50.5" />

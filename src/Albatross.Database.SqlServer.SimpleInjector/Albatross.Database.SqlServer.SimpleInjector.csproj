@@ -12,6 +12,7 @@
     <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <PackageTags>database schema metadata sqlserver</PackageTags>
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SimpleInjector" Version="4.3.0" />

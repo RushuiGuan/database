@@ -7,10 +7,10 @@
     <Authors>Rushui Guan</Authors>
     <Product>Albatross SqlServer Database Schema Api SimpleInjector Package</Product>
     <Description>This project sets up the SimpleInjector container that registers the interfaces in the Albatross.Database project for Microsoft Sql server.</Description>
-    <PackageLicenseUrl>https://github.com/RushuiGuan/Database/blob/master/LICENSE</PackageLicenseUrl>
-    <PackageProjectUrl>https://rushuiguan.github.io/Database/</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/RushuiGuan/database/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <PackageTags>database schema metadata sqlserver</PackageTags>
-    <PackageReleaseNotes>Please see https://rushuiguan.github.io/Database/</PackageReleaseNotes>
+    <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="SimpleInjector" Version="4.3.0" />

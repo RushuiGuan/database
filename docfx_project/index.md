@@ -13,6 +13,8 @@ This repo contains a set of projects that reads metadata from a database server.
 * [Albatross.Database.UnitTest](xref:Albatross.Database.UnitTest) - Unit test using NUnit
 
 ## Release
+* 1.1.5
+	* Has to make a new release since nuget doesn't allow any changes to project site url, release note or license file url.
 * 1.1.4
 	* New interface [IGetProcedure](xref:Albatross.Database.IGetProcedure)
 		* Return the metadata about a stored procedure

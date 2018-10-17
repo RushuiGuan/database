@@ -94,7 +94,7 @@ public class ParseCriteriaTest</code></pre>
     <a href="https://github.com/RushuiGuan/database/new/develop/apiSpec/new?filename=Albatross_Database_UnitTest_ParseCriteriaTest_NameCheck_System_String_.md&amp;value=---%0Auid%3A%20Albatross.Database.UnitTest.ParseCriteriaTest.NameCheck(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/RushuiGuan/database/blob/develop/src/Albatross.Database.UnitTest/ParseCriteriaTest.cs/#L24">View Source</a>
+    <a href="https://github.com/RushuiGuan/database/blob/develop/src/Albatross.Database.UnitTest/ParseCriteriaTest.cs/#L29">View Source</a>
   </span>
   <a id="Albatross_Database_UnitTest_ParseCriteriaTest_NameCheck_" data-uid="Albatross.Database.UnitTest.ParseCriteriaTest.NameCheck*"></a>
   <h4 id="Albatross_Database_UnitTest_ParseCriteriaTest_NameCheck_System_String_" data-uid="Albatross.Database.UnitTest.ParseCriteriaTest.NameCheck(System.String)">NameCheck(String)</h4>
@@ -102,9 +102,14 @@ public class ParseCriteriaTest</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestCase(&quot;&quot;, ExpectedResult = null)]
+    <pre><code class="lang-csharp hljs">[TestCase(null, ExpectedResult = null)]
+[TestCase(&quot;&quot;, ExpectedResult = null)]
 [TestCase(&quot;test&quot;, ExpectedResult = &quot;test&quot;)]
 [TestCase(&quot;a.b&quot;, ExpectedResult = &quot;b&quot;)]
+[TestCase(&quot;a.*&quot;, ExpectedResult = null)]
+[TestCase(&quot;a.b*&quot;, ExpectedResult = &quot;b%&quot;)]
+[TestCase(&quot;*&quot;, ExpectedResult = null)]
+[TestCase(&quot;*.*&quot;, ExpectedResult = null)]
 public string NameCheck(string criteria)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -152,9 +157,14 @@ public string NameCheck(string criteria)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[TestCase(&quot;&quot;, ExpectedResult = null)]
+    <pre><code class="lang-csharp hljs">[TestCase(null, ExpectedResult = null)]
+[TestCase(&quot;&quot;, ExpectedResult = null)]
 [TestCase(&quot;test&quot;, ExpectedResult = null)]
 [TestCase(&quot;a.b&quot;, ExpectedResult = &quot;a&quot;)]
+[TestCase(&quot;a.*&quot;, ExpectedResult = &quot;a&quot;)]
+[TestCase(&quot;*.*&quot;, ExpectedResult = null)]
+[TestCase(&quot;*a.*&quot;, ExpectedResult = &quot;%a&quot;)]
+[TestCase(&quot;*a*b*.*&quot;, ExpectedResult = &quot;%a%b%&quot;)]
 public string SchemaCheck(string criteria)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>

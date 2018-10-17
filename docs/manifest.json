@@ -549,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Albatross.Database.SqlServer.ParseCriteria.html",
-          "hash": "ih8pTLkmvCSct+kGrt/Q8Q=="
+          "hash": "qxva/2H4vL8qxEMOO0jNxA=="
         }
       },
       "is_incremental": false,
@@ -597,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Albatross.Database.SqlServer.html",
-          "hash": "K1K1VnVjmlTzibZzb5jFkQ=="
+          "hash": "iJa/uMb7+iyDSIM25oIzQA=="
         }
       },
       "is_incremental": false,
@@ -657,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Albatross.Database.UnitTest.ParseCriteriaTest.html",
-          "hash": "2wdkKATnAo0Pzg1n+ZLEGw=="
+          "hash": "byyO6qOI9gW/AKk2ottc2A=="
         }
       },
       "is_incremental": false,
@@ -765,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "aN3Ow+4fSr0UBl8tcI8ubw=="
+          "hash": "b/zCisXjNbMPdbPhNVZAfQ=="
         }
       },
       "is_incremental": false,
@@ -787,8 +787,7 @@
   "incremental_info": [
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot build incrementally because last build info is missing.",
+        "can_incremental": true,
         "incrementalPhase": "build"
       },
       "processors": {
@@ -797,20 +796,20 @@
           "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
           "incrementalPhase": "build"
         },
-        "ConceptualDocumentProcessor": {
-          "can_incremental": false,
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         },
-        "ManagedReferenceDocumentProcessor": {
-          "can_incremental": false,
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
           "incrementalPhase": "build"
         }
       }
     },
     {
       "status": {
-        "can_incremental": false,
-        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
         "incrementalPhase": "postProcessing"
       },
       "processors": {}

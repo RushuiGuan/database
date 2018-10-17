@@ -13,7 +13,7 @@ This repo contains a set of projects that reads metadata from a database server.
 * [Albatross.Database.UnitTest](xref:Albatross.Database.UnitTest) - Unit test using NUnit
 
 ## Release
-* Albatross.Database.SqlServer - 1.1.6
+* 1.1.6 - Albatross.Database.SqlServer; Albatross.Database.SqlServer.SimpleInjector
 	* Update the implementation of [ParseCriteria](xref:Albatross.Database.SqlServer.ParseCriteria)
 * 1.1.5
 	* Has to make a new release since nuget doesn't allow any changes to project site url, release note or license file url.

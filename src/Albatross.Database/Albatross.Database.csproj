@@ -14,5 +14,6 @@
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
     <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 </Project>

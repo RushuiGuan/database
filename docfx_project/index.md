@@ -13,6 +13,7 @@ This repo contains a set of projects that reads metadata from a database server.
 * [Albatross.Database.UnitTest](xref:Albatross.Database.UnitTest) - Unit test using NUnit
 
 ## Release
+* 1.1.7 - Reduce the .Net Framework requirement from n462 to net46.  Make all three assemblies the same version.
 * 1.1.6 - Albatross.Database.SqlServer; Albatross.Database.SqlServer.SimpleInjector
 	* Update the implementation of [ParseCriteria](xref:Albatross.Database.SqlServer.ParseCriteria)
 * 1.1.5

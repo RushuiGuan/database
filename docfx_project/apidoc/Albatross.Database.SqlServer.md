@@ -7,7 +7,7 @@ This project contains the Microsoft Sql Server implementation of interfaces defi
 
 * target framework
     * netstandard2.0
-    * net462
+    * net46
 * dependency
     * dapper
     * System.Data.SqlClient

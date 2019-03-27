@@ -7,5 +7,5 @@ This namespace defines objects that represent database objects such as table, vi
 
 * target framework
     * netstandard2.0
-    * net462
+    * net46
 

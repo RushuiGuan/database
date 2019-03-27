@@ -7,7 +7,7 @@ This project sets up the SimpleInjector container that registers the interfaces 
 
 * target framework
     * netstandard2.0
-    * net462
+    * net46
 * dependency
     * SimpleInjector
     * SimpleInjector.Packaging

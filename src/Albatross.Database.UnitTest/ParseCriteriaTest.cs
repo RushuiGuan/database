@@ -1,43 +1,38 @@
 ﻿using Albatross.Database.SqlServer;
-using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Xunit;
 
-namespace Albatross.Database.UnitTest {
-	[TestFixture(TestOf = typeof(ParseCriteria))]
+namespace Albatross.Database.UnitTest
+{
 	public class ParseCriteriaTest {
 
-
-
-		[TestCase(null, ExpectedResult = null)]
-		[TestCase("", ExpectedResult = null)]
-		[TestCase("test", ExpectedResult = null)]
-		[TestCase("a.b", ExpectedResult = "a")]
-		[TestCase("a.*", ExpectedResult = "a")]
-		[TestCase("*.*", ExpectedResult = null)]
-		[TestCase("*a.*", ExpectedResult = "%a")]
-		[TestCase("*a*b*.*", ExpectedResult = "%a%b%")]
-		public string SchemaCheck(string criteria) {
+		[Theory]
+		[InlineData(null, null)]
+		[InlineData("", null)]
+		[InlineData("test", null)]
+		[InlineData("a.b", "a")]
+		[InlineData("a.*", "a")]
+		[InlineData("*.*", null)]
+		[InlineData("*a.*", "%a")]
+		[InlineData("*a*b*.*", "%a%b%")]
+		public void SchemaCheck(string criteria, string expected) {
 			string schema, name;
 			new ParseCriteria().Parse(criteria, out schema, out name);
-			return schema;
+			Assert.Equal(expected, schema);
 		}
 
-		[TestCase(null, ExpectedResult = null)]
-		[TestCase("", ExpectedResult = null)]
-		[TestCase("test", ExpectedResult = "test")]
-		[TestCase("a.b", ExpectedResult = "b")]
-		[TestCase("a.*", ExpectedResult = null)]
-		[TestCase("a.b*", ExpectedResult = "b%")]
-		[TestCase("*", ExpectedResult = null)]
-		[TestCase("*.*", ExpectedResult = null)]
-		public string NameCheck(string criteria) {
+		[Theory]
+		[InlineData(null, null)]
+		[InlineData("", null)]
+		[InlineData("test", "test")]
+		[InlineData("a.b", "b")]
+		[InlineData("a.*", null)]
+		[InlineData("a.b*", "b%")]
+		[InlineData("*", null)]
+		[InlineData("*.*", null)]
+		public void NameCheck(string criteria, string expected) {
 			string schema, name;
 			new ParseCriteria().Parse(criteria, out schema, out name);
-			return name;
+			Assert.Equal(expected, name);
 		}
 	}
 }

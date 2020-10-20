@@ -1,13 +1,10 @@
 ﻿using System.Linq;
 using Albatross.Database.SqlServer;
-using NUnit.Framework;
-using SimpleInjector;
+using Xunit;
 
-namespace Albatross.Database.UnitTest {
-	[TestFixture]
+namespace Albatross.Database.UnitTest
+{
 	public class GeneralUnitTest {
-		Container Container { get; } = new Container();
-
 		GetDbConnection GetDbConnection { get; } = new GetDbConnection(new GetConnectionString());
 
 		public Database MasterDb { get; private set; } = new Database {
@@ -22,10 +19,10 @@ namespace Albatross.Database.UnitTest {
 		};
 
 
-		[TestOf(typeof(GetConnectionString))]
-		[TestCase("localhost", "content", true, null, null, ExpectedResult = "Data Source=localhost;Initial Catalog=content;Integrated Security=True")]
-		[TestCase("localhost", "content", false, "jdoe", "welcome", ExpectedResult = "Data Source=localhost;Initial Catalog=content;User ID=jdoe;Password=welcome")]
-		public string GetConnectionStringTest(string server, string database, bool sspi, string username, string pwd) {
+		[Theory]
+		[InlineData("localhost", "content", true, null, null, "Data Source=localhost;Initial Catalog=content;Integrated Security=True")]
+		[InlineData("localhost", "content", false, "jdoe", "welcome", "Data Source=localhost;Initial Catalog=content;User ID=jdoe;Password=welcome")]
+		public void GetConnectionStringTest(string server, string database, bool sspi, string username, string pwd, string expected) {
 			string data = new GetConnectionString().Get(new Database {
 				DataSource = server,
 				InitialCatalog = database,
@@ -33,36 +30,35 @@ namespace Albatross.Database.UnitTest {
 				UserName = username,
 				Password = pwd,
 			});
-			return data;
+			Assert.Equal(expected, data);
 		}
 
-		[TestOf(typeof(GetSqlType))]
-		[TestCase("int", ExpectedResult = "int")]
-		[TestCase("bigint", ExpectedResult = "bigint")]
-		public string GetSqlTypeTest(string name) {
+		[Theory]
+		[InlineData("int", "int")]
+		[InlineData("bigint", "bigint")]
+		public void GetSqlTypeTest(string name, string expected) {
 			GetSqlType getSqlType = new GetSqlType(GetDbConnection);
 			var type = getSqlType.Get(MasterDb, null, name);
-			return type.Name;
+			Assert.Equal(expected, type.Name);
 		}
 
-		[Test(TestOf = typeof(ListSqlType))]
+		[Fact]
 		public void ListSqlTypeTest() {
 			ListSqlType listSqlType = new ListSqlType(GetDbConnection);
 			var types = listSqlType.List(MasterDb);
-			Assert.Greater(types.Count(), 0);
+			Assert.NotEmpty(types);
 		}
 
-		[TestOf(typeof(GetTable))]
-		//[TestCase("dbo", "spt_fallback_db", ExpectedResult = "spt_fallback_db")]
-		[TestCase("dyn", "svc", ExpectedResult = "Svc")]
-		public string GetTableTest(string schema, string name) {
+		[Theory]
+		[InlineData("dyn", "svc", "Svc")]
+		public void GetTableTest(string schema, string name, string expected) {
 			GetTable getTable = new GetTable(GetDbConnection, new ListTableColumn(GetDbConnection, new GetTableColumnType(GetDbConnection)), new ListTableIndex(GetDbConnection, new ListTableIndexColumn(GetDbConnection)));
 			var type = getTable.Get(AlbatrossDb, schema, name);
-			return type.Name;
+			Assert.Equal(expected, type.Name);
 		}
 
-		[TestOf(typeof(ListTableIndex))]
-		[TestCase("dbo", "trade")]
+		[Theory]
+		[InlineData("dbo", "trade")]
 		public void GetTableIndexTest(string schema, string name) {
 			Table table = new Table {
 				Database = AlbatrossDb,
@@ -71,15 +67,15 @@ namespace Albatross.Database.UnitTest {
 			};
 			ListTableIndex getTableIndex = new ListTableIndex(GetDbConnection, new ListTableIndexColumn(GetDbConnection));
 			var indexes = getTableIndex.List(table);
-			Assert.NotZero(indexes.Count());
+			Assert.NotEmpty(indexes);
 			foreach (var item in indexes) {
-				Assert.NotZero(item.Columns.Count());
+				Assert.NotEmpty(item.Columns);
 			}
 		}
 
-		[TestOf(typeof(ListProcedureParameter))]
-		[TestCase("dyn", "SetServiceType")]
-		[TestCase("dyn", "SetSvcReferenceArray")]
+		[Theory]
+		[InlineData("dyn", "SetServiceType")]
+		[InlineData("dyn", "SetSvcReferenceArray")]
 		public void ListProcedureParameterTest(string schema, string name) {
 			Procedure procedure = new Procedure {
 				Database = AlbatrossDb,
@@ -87,12 +83,12 @@ namespace Albatross.Database.UnitTest {
 				Name = name,
 			};
 			var @params = new ListProcedureParameter(this.GetDbConnection).List(procedure);
-			Assert.NotZero(@params.Count());
+			Assert.NotEmpty(@params);
 		}
 
-		[TestOf(typeof(GetProcedure))]
-		[TestCase("dyn", "SetServiceType")]
-		[TestCase("dyn", "SetSvcReferenceArray")]
+		[Theory]
+		[InlineData("dyn", "SetServiceType")]
+		[InlineData("dyn", "SetSvcReferenceArray")]
 		public void GetProcedureTest(string schema, string name) {
 			Procedure procedure = new Procedure {
 				Database = AlbatrossDb,
@@ -100,14 +96,14 @@ namespace Albatross.Database.UnitTest {
 				Name = name,
 			};
 			var sp = new GetProcedure(this.GetDbConnection, new ListProcedureParameter(GetDbConnection), new GetProcedureDefinition(this.GetDbConnection), new GetDatabasePermission(this.GetDbConnection)).Get(AlbatrossDb, schema, name);
-			Assert.AreEqual(sp.Name, name);
-			Assert.AreEqual(sp.Schema, schema);
-			Assert.NotZero(sp.Parameters.Count());
+			Assert.Equal(sp.Name, name);
+			Assert.Equal(sp.Schema, schema);
+			Assert.NotEmpty(sp.Parameters);
 		}
 
-		[TestCase("ac", "createcompany", ExpectedResult = "")]
-		[TestOf(typeof(GetProcedureDefinition))]
-		public string GetProcedureDefinitionTest(string schema, string name) {
+		[Theory]
+		[InlineData("ac", "createcompany", "")]
+		public void GetProcedureDefinitionTest(string schema, string name, string expected) {
 			Procedure procedure = new Procedure() {
 				Schema = schema,
 				Name = name,
@@ -117,7 +113,8 @@ namespace Albatross.Database.UnitTest {
 					SSPI = true,
 				}
 			};
-			return new GetProcedureDefinition(GetDbConnection).Get(procedure);
+			string result = new GetProcedureDefinition(GetDbConnection).Get(procedure);
+			Assert.Equal(expected, result);
 		}
 	}
 }

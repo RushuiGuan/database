@@ -5,12 +5,19 @@
     <Product>Albatross Database Schema Api</Product>
     <Title>Albatross Database Schema Core Api</Title>
     <Description>This project defines objects that represent database objects such as table, view, procedures etc. It also defines interfaces to retrieve the objects from a database.</Description>
-    <PackageLicenseUrl>https://github.com/RushuiGuan/database/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <Copyright>Copyright ©2018</Copyright>
     <PackageTags>database schema metadata</PackageTags>
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
     <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
     <Version>2.0.0</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
 </Project>

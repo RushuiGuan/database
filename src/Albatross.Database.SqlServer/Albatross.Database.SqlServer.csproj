@@ -5,13 +5,14 @@
     <Product>Albatross Database Schema Sql Server Api</Product>
     <Title>Albatross Database Schema Sql Server Api</Title>
     <Description>This project provides the Microsoft Sql Server implementation of the interfaces in the Albatross.Database project</Description>
-    <PackageLicenseUrl>https://github.com/RushuiGuan/database/blob/master/LICENSE</PackageLicenseUrl>
+    <PackageLicenseUrl></PackageLicenseUrl>
     <PackageTags>database schema metadata</PackageTags>
     <PackageProjectUrl>https://rushuiguan.github.io/database/</PackageProjectUrl>
     <PackageReleaseNotes>Please see https://rushuiguan.github.io/database/</PackageReleaseNotes>
     <RepositoryUrl>https://github.com/RushuiGuan/database</RepositoryUrl>
     <Copyright>Copyright Â©2018</Copyright>
     <Version>2.0.0</Version>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.0.35" />
@@ -20,5 +21,11 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Albatross.Database\Albatross.Database.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 </Project>

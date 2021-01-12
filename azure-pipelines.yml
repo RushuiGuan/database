@@ -14,10 +14,12 @@ steps:
 - task: NuGetToolInstaller@1
 
 - task: NuGetCommand@2
+  displayName: restore
   inputs:
     restoreSolution: '$(solution)'
 
 - task: DotNetCoreCLI@2
+  displayName: pack
   inputs:
     command: 'pack'
     packagesToPack: '$(projects)'
@@ -25,6 +27,7 @@ steps:
     verbosityPack: 'Normal'
 
 - task: DotNetCoreCLI@2
+  displayName: push
   inputs:
     command: 'push'
     packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'

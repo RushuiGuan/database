@@ -1,0 +1,35 @@
+trigger:
+- staging
+
+pool:
+  vmImage: 'windows-latest'
+
+variables:
+  solution: './database.sln'
+  projects: './src/**/*.csproj'
+  buildPlatform: 'Any CPU'
+  buildConfiguration: 'Release'
+
+steps:
+- task: NuGetToolInstaller@1
+
+- task: NuGetCommand@2
+  displayName: restore
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: DotNetCoreCLI@2
+  displayName: pack
+  inputs:
+    command: 'pack'
+    packagesToPack: '$(projects)'
+    versioningScheme: 'off'
+    verbosityPack: 'Normal'
+
+- task: DotNetCoreCLI@2
+  displayName: push
+  inputs:
+    command: 'push'
+    packagesToPush: '$(Build.ArtifactStagingDirectory)/*.nupkg'
+    nuGetFeedType: 'internal'
+    publishVstsFeed: 'Staging'
